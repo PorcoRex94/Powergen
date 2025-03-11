@@ -25,6 +25,18 @@ export const dropFromDown = keyframes`
   }
 `;
 
+export const dropFromLeft = keyframes`
+    0%{
+        transform: translateX(-100vw);
+    }
+    80%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+`;
+
 // 🔹 El h2 comienza FUERA de la pantalla (izquierda) y entra con rebote
 export const slideFromLeft = keyframes`
   0% {
@@ -113,6 +125,7 @@ export const ScrollButton = styled(Link)`
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
+  animation: ${dropFromLeft} 1.2s ease-out;
 
   &:hover {
     background-color: #e6b800;
