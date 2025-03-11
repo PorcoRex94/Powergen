@@ -10,6 +10,26 @@ export const GlobalContactContainer = styled.section`
   }
 `;
 
+export const FirstContainerContact = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+`;
+
+export const SecondContainerContact = styled.div`
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+`;
+
+export const ThirdContainerContact = styled.div`
+  padding: 1.5rem;
+`;
+
 export const ContactContainer = styled.div`
   width: 100%;
   padding: 1rem;
@@ -38,6 +58,7 @@ export const ContactContainerLeft = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: 1.5px solid black;
   }
 
   .btn {
@@ -66,6 +87,7 @@ export const ContainerInput = styled.div`
     border-right: none;
     outline: none;
     padding: 8px;
+    border-bottom: 1.5px solid black;
   }
 `;
 

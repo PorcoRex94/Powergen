@@ -1,15 +1,44 @@
+import { WhatsAppButton } from "../../btn-whatsapp/WhatsAppButton";
 import {
   ContactContainer,
   ContactContainerLeft,
   ContactContainerRight,
   ContainerInput,
+  FirstContainerContact,
   GlobalContactContainer,
+  SecondContainerContact,
+  ThirdContainerContact,
 } from "./contacto-styles";
 
 export const Contacto = () => {
   return (
     <GlobalContactContainer id="contacto">
       <h2>Contacto</h2>
+      <FirstContainerContact>
+        <SecondContainerContact>
+          <h3>Solicitá asesoramiento ahora</h3>
+          <p>
+            Desde Powergen ponemos a tu disposición múltiples canales de
+            comunicación.
+          </p>
+          <p>
+            Contamos con un equipo de especialistas para darte el mejor Servicio
+            de Asesoramiento del mercado, sin costo alguno.
+          </p>
+          <p>
+            Enviarnos un mensaje con el Formulario de contacto en donde podrás
+            solicitar Presupuestos, Cotización de Alquiler o Reparación.
+          </p>
+          <p>
+            También podés comunicarte a nuestro WhatsApp para recibir ayuda
+            directa de un asesor.
+          </p>
+          <p>Estamos para ayudarte.</p>
+        </SecondContainerContact>
+        <ThirdContainerContact>
+          <WhatsAppButton message="¡Hola! Estoy en la página de contacto y necesito ayuda." />
+        </ThirdContainerContact>
+      </FirstContainerContact>
       <ContactContainer>
         <ContactContainerLeft>
           <h3>Formulario de Contacto</h3>
