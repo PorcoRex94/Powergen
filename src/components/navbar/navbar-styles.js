@@ -22,7 +22,7 @@ export const HeaderContainer = styled.header`
     position: absolute;
     inset: 0;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     cursor: pointer;
     transition: opacity 0.3s, transform 0.4s;
   }
@@ -43,8 +43,9 @@ export const HeaderContainer = styled.header`
   .nav__menu {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 35%;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    width: 45%;
     gap: 2rem;
   }
 
@@ -55,13 +56,13 @@ export const HeaderContainer = styled.header`
 
   @media (min-width: 1245px) and (max-width: 1412px) {
     .nav__menu {
-      width: 40%;
+      width: 45%;
     }
   }
 
   @media (max-width: 1244px) {
     .nav__menu {
-      width: 46%;
+      width: 50%;
     }
 
     @media (max-width: 1092px) {
@@ -189,21 +190,21 @@ export const NavContainer = styled.nav`
 
 export const UlContainer = styled.ul`
   display: flex;
-  gap: 15px;
+  gap: 3rem;
   color: var(--naranja);
 
   .nav__link {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    align-items: flex-end;
     color: var(--naranja);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
   .li__empty {
     padding: 0.5rem;
+    margin-top: 0.7rem;
   }
 
   .dropdown__item {
@@ -212,13 +213,15 @@ export const UlContainer = styled.ul`
   }
 
   .dropdown__arrow {
-    color: var(--amarillo);
-    font-size: 1.2rem;
+    position: relative;
+    top: 3px;
+    color: var(--naranja);
+    font-size: 1.4rem;
   }
 
   .dropdown__menu {
     position: absolute;
-    top: 45px;
+    top: 20px;
     right: -140px;
     width: 262px;
     background-color: var(--negro);
@@ -251,7 +254,7 @@ export const UlContainer = styled.ul`
   }
 
   .hand__icon {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .dropdown__link:hover {

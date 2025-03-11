@@ -10,13 +10,13 @@ import {
 const images = [
   {
     src: "/assets/imgs/img/foto-hero-index.jpg",
-    text: "Asd",
+    text: "Líderes en Energía",
     section: "#nosotros",
   },
   {
     src: "/assets/imgs/img/hero-index-tres.jpg",
-    text: "Asd 3",
-    text2: "Que no se te apaguen las lamparitas de la cabeza",
+    text: "Grupos Electrógenos",
+    text2: "Para Industria, Minería y Petróleo",
     section: "#contacto",
   },
   {
