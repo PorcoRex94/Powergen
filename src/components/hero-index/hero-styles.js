@@ -15,7 +15,7 @@ export const dropFromTop = keyframes`
 
 export const dropFromDown = keyframes`
     0% {
-    transform: translateY(100vh);
+    transform: translateY(40vh);
   }
   80% {
     transform: translateY(5px);

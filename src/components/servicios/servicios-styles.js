@@ -18,11 +18,11 @@ export const GlobalContainer = styled.section`
 
 export const ContainerContent = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  grid-template-rows: repeat(2, auto); /* 2 filas */
-  gap: 15px; /* Espacio entre tarjetas */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 15px;
   width: 100%;
-  height: 1000px;
+  height: 1100px;
   padding: 1rem;
   margin-bottom: 1rem;
 
@@ -42,7 +42,7 @@ export const ContainerContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     padding: 1rem;
   }
 
