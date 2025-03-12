@@ -3,7 +3,7 @@ import { ContainerContent, GlobalContainer } from "./servicios-styles";
 
 export const Servicios = () => {
   return (
-    <GlobalContainer>
+    <GlobalContainer id="servicios">
       <h2>Servicios</h2>
       <ContainerContent>
         <div className="card">

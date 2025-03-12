@@ -203,8 +203,7 @@ export const UlContainer = styled.ul`
   }
 
   .li__empty {
-    padding: 0.5rem;
-    margin-top: 0.7rem;
+    padding: 1rem;
   }
 
   .dropdown__item {
@@ -241,7 +240,6 @@ export const UlContainer = styled.ul`
   .dropdown__item.show-dropdown .dropdown__menu {
     display: block;
     opacity: 1;
-    transform: translateY(-13px);
   }
 
   .dropdown__link {
@@ -288,7 +286,6 @@ export const UlContainer = styled.ul`
     .dropdown__item:hover .nav__link + .dropdown__menu {
       display: block;
       opacity: 1;
-      max-height: 500px;
     }
   }
 `;
