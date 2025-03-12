@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     *{
@@ -14,4 +14,9 @@ export const GlobalStyles = createGlobalStyle`
         --naranja: #FDB415;
         --negro: #231E21;
     }
+`;
+
+export const GlobalBtn = styled.a`
+  border-radius: 20px;
+  padding: 1rem;
 `;

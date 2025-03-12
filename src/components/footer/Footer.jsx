@@ -92,7 +92,7 @@ export const Footer = () => {
             </a>
             <a href="">
               <BsFillTelephoneFill className="icon__down" />
-              1162641313
+              1147601313
             </a>
             <a
               href="https://www.google.com/maps/place/DAI,+Carlos+Francisco+Melo+3580,+B1604+Villa+Martelli,+Provincia+de+Buenos+Aires/@-34.5414837,-58.5081017,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb6d708c70f1b:0x68556064ca06e4fe!8m2!3d-34.5414881!4d-58.5055268!16s%2Fg%2F11csmgf43d?entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"

@@ -117,17 +117,15 @@ export const HeroText = styled.div`
 `;
 
 export const ScrollButton = styled(Link)`
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 10px 20px;
-  background-color: #ffcc00;
-  color: #333;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
+  padding: 1rem;
+  background-color: var(--naranja);
+  color: white;
+  border-radius: 10px;
   animation: ${dropFromLeft} 1.2s ease-out;
 
   &:hover {
-    background-color: #e6b800;
+    background-color: rgb(249, 177, 52);
+    transform: scale(1.1);
+    color: black;
   }
 `;

@@ -26,7 +26,7 @@ export const Contacto = () => {
             de Asesoramiento del mercado, sin costo alguno.
           </p>
           <p>
-            Enviarnos un mensaje con el Formulario de contacto en donde podrás
+            Envianos un mensaje a través del formulario en donde podrás
             solicitar Presupuestos, Cotización de Alquiler o Reparación.
           </p>
           <p>

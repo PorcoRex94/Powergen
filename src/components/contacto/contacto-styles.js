@@ -16,6 +16,7 @@ export const FirstContainerContact = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 25px;
+  background-color: var(--naranja);
 `;
 
 export const SecondContainerContact = styled.div`

@@ -9,7 +9,7 @@ const Button = styled.a`
   justify-content: center;
   background-color: #25d366;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 50px;
@@ -40,7 +40,7 @@ export const WhatsAppButton = ({
 
   return (
     <Button href={url} target="_blank" rel="noopener noreferrer">
-      <FaWhatsapp className="icon__wsp" /> WhatsApp
+      <FaWhatsapp className="icon__wsp" /> Consultar
     </Button>
   );
 };
