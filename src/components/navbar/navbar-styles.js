@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   width: calc(100vw - var(--scrollbar-width));
-  padding: 0.5rem;
+  padding: 1.2rem;
   background-color: var(--negro);
 
   .nav__burger,

@@ -4,7 +4,7 @@ import { GlobalStyles } from "./styles/GlobalStyles";
 import { Index } from "./pages/Index";
 import { Footer } from "./components/footer/Footer";
 import { Contacto } from "./components/contacto/Contacto";
-import { Servicios } from "./components/servicios/Servicios";
+import { ServiciosDos } from "./components/servicios/ServiciosDos";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
       </Routes>
-      <Servicios />
+      <ServiciosDos />
       <Contacto />
       <Footer />
     </>
