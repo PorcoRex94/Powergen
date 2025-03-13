@@ -5,6 +5,7 @@ import { Index } from "./pages/Index";
 import { Footer } from "./components/footer/Footer";
 import { Contacto } from "./components/contacto/Contacto";
 import { ServiciosDos } from "./components/servicios/ServiciosDos";
+import { Servicios } from "./components/servicios/Servicios";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
       </Routes>
-      <ServiciosDos />
+      <Servicios />
       <Contacto />
       <Footer />
     </>
