@@ -38,6 +38,10 @@ export const InfoPilaresContainer = styled.div`
   align-items: center;
   gap: 75px;
   color: white;
+
+  h3 {
+    color: var(--naranja);
+  }
 `;
 
 export const InfoPilaresTextContainer = styled.div`
