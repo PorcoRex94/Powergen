@@ -9,18 +9,18 @@ import {
 
 const images = [
   {
-    src: "/assets/imgs/img/foto-hero-index.jpg",
+    src: "/assets/imgs/img/city.jpg",
     text: "Líderes en Energía",
     section: "#nosotros",
   },
   {
-    src: "/assets/imgs/img/hero-index-tres.jpg",
+    src: "/assets/imgs/img/city.jpg",
     text: "Grupos Electrógenos",
     text2: "Para Industria, Minería y Petróleo",
     section: "#contacto",
   },
   {
-    src: "/assets/imgs/img/hero-index-dos.jpg",
+    src: "/assets/imgs/img/city.jpg",
     text: "GUARDIA 24HS",
     text2: "0810-444-1313",
     section: "#guardia",

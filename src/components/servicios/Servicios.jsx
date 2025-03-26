@@ -13,7 +13,7 @@ export const Servicios = () => {
             className="img__servicios"
           />
           <div className="content__text">
-            <h3>Venta</h3>
+            <h3>Grupos Electrógenos</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repudiandae pariatur minima eius rem praesentium culpa sit saepe
@@ -77,7 +77,7 @@ export const Servicios = () => {
             className="img__servicios"
           />
           <div className="content__text">
-            <h3>Transporte</h3>
+            <h3>Transporte, Movimiento e Izaje</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repudiandae pariatur minima eius rem praesentium culpa sit saepe
@@ -93,7 +93,7 @@ export const Servicios = () => {
             className="img__servicios"
           />
           <div className="content__text">
-            <h3>Energía Renovables</h3>
+            <h3>Energías Renovables</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repudiandae pariatur minima eius rem praesentium culpa sit saepe

@@ -1,4 +1,4 @@
-import { WhatsAppButton } from "../../btn-whatsapp/WhatsAppButton";
+import { WhatsAppButton } from "../btn-whatsapp/WhatsAppButton";
 import {
   ContactContainer,
   ContactContainerLeft,
