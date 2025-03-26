@@ -52,6 +52,10 @@ export const InfoPilaresRow = styled.div`
   justify-content: space-between;
   width: 100%;
   text-align: center;
+
+  h4 {
+    color: var(--naranja);
+  }
 `;
 
 export const InfoPilaresLeft = styled.div`
@@ -60,6 +64,9 @@ export const InfoPilaresLeft = styled.div`
   flex-direction: column;
   gap: 10px;
   padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 5px -5px 5px var(--naranja), 5px 5px 5px var(--naranja),
+    -5px 0px 5px var(--naranja);
 `;
 
 export const InfoPilaresRight = styled.div`
@@ -68,4 +75,7 @@ export const InfoPilaresRight = styled.div`
   flex-direction: column;
   gap: 10px;
   padding: 1rem;
+  border-radius: 15px;
+  box-shadow: -5px -5px 5px var(--naranja), -5px 5px 5px var(--naranja),
+    5px 0px 5px var(--naranja);
 `;
