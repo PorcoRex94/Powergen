@@ -70,7 +70,8 @@ export const InfoPilaresLeft = styled.div`
   padding: 1rem;
   border-radius: 15px;
   box-shadow: 5px -5px 5px var(--naranja), 5px 5px 5px var(--naranja),
-    -5px 0px 5px var(--naranja);
+    -5px 0px 5px var(--naranja), -5px 5px 5px var(--naranja),
+    -5px -5px 5px var(--naranja);
 `;
 
 export const InfoPilaresRight = styled.div`
@@ -80,6 +81,7 @@ export const InfoPilaresRight = styled.div`
   gap: 10px;
   padding: 1rem;
   border-radius: 15px;
-  box-shadow: -5px -5px 5px var(--naranja), -5px 5px 5px var(--naranja),
-    5px 0px 5px var(--naranja);
+  box-shadow: 5px -5px 5px var(--naranja), 5px 5px 5px var(--naranja),
+    -5px 0px 5px var(--naranja), -5px 5px 5px var(--naranja),
+    -5px -5px 5px var(--naranja);
 `;

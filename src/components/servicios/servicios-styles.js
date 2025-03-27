@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const GlobalContainer = styled.section`
   width: calc(100vw - var(--scrollbar-width));
   display: flex;
-  gap: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
 
   h2 {
     width: 100%;
@@ -18,32 +18,39 @@ export const GlobalContainer = styled.section`
 
 export const ContainerContent = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 15px;
-  width: 100%;
-  height: 1100px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: 1.5rem;
 
   .card {
     width: 100%;
-    background: #f0f0f0;
     border-radius: 10px;
     text-align: center;
+    background-color: var(--negro);
   }
 
   .img__servicios {
     width: 100%;
     height: 50%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
 
   .content__text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 1rem;
+    gap: 35px;
+    padding: 2rem;
+    color: var(--naranja);
+  }
+
+  .btn__gap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
   }
 
   .btn__service {

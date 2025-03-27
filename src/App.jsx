@@ -18,7 +18,6 @@ function App() {
       </Routes>
       <Nosotros />
       <Servicios />
-      <ServiciosDos />
       <Contacto />
       <Footer />
     </>
