@@ -7,6 +7,7 @@ import { Contacto } from "./components/contacto/Contacto";
 import { ServiciosDos } from "./components/servicios/ServiciosDos";
 import { Servicios } from "./components/servicios/Servicios";
 import { Nosotros } from "./components/nosotros/Nosotros";
+import { Slider } from "./components/slider/Slider";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       </Routes>
       <Nosotros />
       <Servicios />
+      <Slider />
       <Contacto />
       <Footer />
     </>

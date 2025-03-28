@@ -43,7 +43,14 @@ export const ContainerContent = styled.div`
     align-items: center;
     gap: 35px;
     padding: 2rem;
-    color: var(--naranja);
+
+    h3 {
+      color: var(--naranja);
+    }
+
+    p {
+      color: white;
+    }
   }
 
   .btn__gap {

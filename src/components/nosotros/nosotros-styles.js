@@ -55,7 +55,6 @@ export const InfoPilaresRow = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  text-align: center;
 
   h4 {
     color: var(--naranja);
@@ -66,8 +65,9 @@ export const InfoPilaresLeft = styled.div`
   width: 47%;
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 10px;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 5px -5px 5px var(--naranja), 5px 5px 5px var(--naranja),
     -5px 0px 5px var(--naranja), -5px 5px 5px var(--naranja),
@@ -78,8 +78,9 @@ export const InfoPilaresRight = styled.div`
   width: 47%;
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 10px;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 5px -5px 5px var(--naranja), 5px 5px 5px var(--naranja),
     -5px 0px 5px var(--naranja), -5px 5px 5px var(--naranja),
