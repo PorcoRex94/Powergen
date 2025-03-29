@@ -20,7 +20,9 @@ export const Servicios = () => {
                 Repudiandae pariatur minima eius rem praesentium culpa sit saepe
                 esse ut veniam aliquid doloribus
               </p>
-              <Link className="btn__service">Ver más...</Link>
+              <Link to="/grupos" className="btn__service">
+                Ver más...
+              </Link>
             </div>
           </div>
         </div>
@@ -38,7 +40,9 @@ export const Servicios = () => {
                 Repudiandae pariatur minima eius rem praesentium culpa sit saepe
                 esse ut veniam aliquid doloribus
               </p>
-              <Link className="btn__service">Ver más...</Link>
+              <Link to={"/energias"} className="btn__service">
+                Ver más...
+              </Link>
             </div>
           </div>
         </div>
