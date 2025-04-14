@@ -1,0 +1,25 @@
+import {
+  Card,
+  Content,
+  Image,
+  ImageWrapper,
+  Text,
+  Title,
+} from "./product-card-styles";
+
+export const ProductCard = ({ gruposElectrogenos }) => {
+  return (
+    <Card>
+      <ImageWrapper>
+        <Image src={gruposElectrogenos.image} alt={gruposElectrogenos.nombre} />
+      </ImageWrapper>
+      <Content>
+        <Title>{gruposElectrogenos.nombre}</Title>
+        <Text>Marca: {gruposElectrogenos.marca}</Text>
+        <Text>Combustión: {gruposElectrogenos.combustible}</Text>
+        <Text>Potencia: {gruposElectrogenos.potencia}</Text>
+        <Text>Fase: {gruposElectrogenos.fase}</Text>
+      </Content>
+    </Card>
+  );
+};

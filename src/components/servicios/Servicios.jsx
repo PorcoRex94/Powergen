@@ -16,9 +16,9 @@ export const Servicios = () => {
             <h3>Grupos Electrógenos</h3>
             <div className="btn__gap">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae pariatur minima eius rem praesentium culpa sit saepe
-                esse ut veniam aliquid doloribus
+                Contamos con grupos electrógenos de todas las potencias. Tenemos
+                equipos para todas las necesidades: Hogar, comercio, industria,
+                minería y petróleo.
               </p>
               <Link to="/grupos" className="btn__service">
                 Ver más...
@@ -36,9 +36,8 @@ export const Servicios = () => {
             <h3>Energías Alternativas</h3>
             <div className="btn__gap">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae pariatur minima eius rem praesentium culpa sit saepe
-                esse ut veniam aliquid doloribus
+                Ofrecemos soluciones sostenibles, dando como resultado una
+                energía más limpia y eficiente.
               </p>
               <Link to={"/energias"} className="btn__service">
                 Ver más...

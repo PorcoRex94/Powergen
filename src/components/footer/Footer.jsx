@@ -90,7 +90,7 @@ export const Footer = () => {
               <IoIosMail className="icon__down" />
               central@powergen.com.ar
             </a>
-            <a href="">
+            <a href="tel:+5491147601313">
               <BsFillTelephoneFill className="icon__down" />
               1147601313
             </a>
