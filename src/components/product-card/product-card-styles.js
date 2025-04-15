@@ -8,8 +8,6 @@ export const Card = styled.div`
   transition: box-shadow 0.2s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   &:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
@@ -27,10 +25,7 @@ export const Text = styled.p`
 
 export const ImageWrapper = styled.div`
   width: 100%;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 45%;
   background: #f9f9f9;
 `;
 
@@ -41,4 +36,13 @@ export const Image = styled.img`
 
 export const Content = styled.div`
   padding: 1rem;
+  text-align: center;
+`;
+
+export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
 `;

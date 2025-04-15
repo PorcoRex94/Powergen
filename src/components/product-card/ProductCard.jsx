@@ -4,6 +4,7 @@ import {
   Image,
   ImageWrapper,
   Text,
+  TextContainer,
   Title,
 } from "./product-card-styles";
 
@@ -15,10 +16,12 @@ export const ProductCard = ({ gruposElectrogenos }) => {
       </ImageWrapper>
       <Content>
         <Title>{gruposElectrogenos.nombre}</Title>
-        <Text>Marca: {gruposElectrogenos.marca}</Text>
-        <Text>Combustible: {gruposElectrogenos.combustible}</Text>
-        <Text>Potencia: {gruposElectrogenos.potencia}</Text>
-        <Text>Fase: {gruposElectrogenos.fase}</Text>
+        <TextContainer>
+          <Text>Marca: {gruposElectrogenos.marca}</Text>
+          <Text>Combustible: {gruposElectrogenos.combustible}</Text>
+          <Text>Potencia: {gruposElectrogenos.potencia}</Text>
+          <Text>Fase: {gruposElectrogenos.fase}</Text>
+        </TextContainer>
       </Content>
     </Card>
   );
