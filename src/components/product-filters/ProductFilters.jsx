@@ -33,7 +33,7 @@ export const ProductFilters = ({
 
       <Label>Combustible:</Label>
       <CheckboxGroup>
-        {["Gas", "Nafta", "Diésel"].map((type, index) => (
+        {["Gas", "Nafta", "Diesel"].map((type, index) => (
           <CheckboxLabel key={`combustible-${index}-${type}`}>
             <input type="checkbox" value={type} onChange={onCombustionChange} />{" "}
             {type}
