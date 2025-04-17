@@ -162,7 +162,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 18,
+    id: 19,
     image: "/assets/imgs/grupos-electrogenos/cummins-110a.webp",
     nombre: "Grupo Electrógeno YNS110A",
     marca: "Cummins",
@@ -171,7 +171,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 19,
+    id: 20,
     image: "/assets/imgs/grupos-electrogenos/pramac-100.webp",
     nombre: "Grupo Electrógeno GGW100G",
     marca: "Pramac",
@@ -180,7 +180,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 20,
+    id: 21,
     image: "/assets/imgs/grupos-electrogenos/cummins-88.webp",
     nombre: "Grupo Electrógeno YNS88S",
     marca: "Cummins",
@@ -189,7 +189,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 21,
+    id: 22,
     image: "/assets/imgs/grupos-electrogenos/pramac-70.webp",
     nombre: "Grupo Electrógeno GGW070",
     marca: "Pramac",
@@ -198,7 +198,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 22,
+    id: 23,
     image: "/assets/imgs/grupos-electrogenos/logus-69.webp",
     nombre: "Grupo Electrógeno 69BR",
     marca: "Logus",
@@ -207,7 +207,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 23,
+    id: 24,
     image: "/assets/imgs/grupos-electrogenos/logus-69.webp",
     nombre: "Grupo Electrógeno 69BR GAS",
     marca: "Logus",
@@ -216,7 +216,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 23,
+    id: 25,
     image: "/assets/imgs/grupos-electrogenos/logus-69a.webp",
     nombre: "Grupo Electrógeno 69BR Abierto",
     marca: "Logus",
@@ -225,7 +225,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 24,
+    id: 26,
     image: "/assets/imgs/grupos-electrogenos/cummins-65.webp",
     nombre: "Grupo Electrógeno YNS65S",
     marca: "Cummins",
@@ -234,7 +234,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 25,
+    id: 27,
     image: "/assets/imgs/grupos-electrogenos/pramac-50.webp",
     nombre: "Grupo Electrógeno GGW050",
     marca: "Pramac",
@@ -243,7 +243,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 26,
+    id: 28,
     image: "/assets/imgs/grupos-electrogenos/logus-41.webp",
     nombre: "Grupo Electrógeno 41BR",
     marca: "Logus",
@@ -252,7 +252,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 27,
+    id: 29,
     image: "/assets/imgs/grupos-electrogenos/logus-41.webp",
     nombre: "Grupo Electrógeno 41BR GAS",
     marca: "Logus",
@@ -261,7 +261,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 28,
+    id: 30,
     image: "/assets/imgs/grupos-electrogenos/logus-41a.webp",
     nombre: "Grupo Electrógeno 41BR Abierto",
     marca: "Logus",
@@ -270,7 +270,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 29,
+    id: 31,
     image: "/assets/imgs/grupos-electrogenos/cummins-42.webp",
     nombre: "Grupo Electrógeno YNS42S",
     marca: "Cummins",
@@ -279,7 +279,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 30,
+    id: 32,
     image: "/assets/imgs/grupos-electrogenos/pramac-35.webp",
     nombre: "Grupo Electrógeno GGW035",
     marca: "Pramac",
@@ -288,7 +288,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 31,
+    id: 33,
     image: "/assets/imgs/grupos-electrogenos/kipor-26.webp",
     nombre: "Grupo Electrógeno KDE30SS3",
     marca: "Kipor",
@@ -297,7 +297,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 32,
+    id: 34,
     image: "/assets/imgs/grupos-electrogenos/logus-21.webp",
     nombre: "Grupo Electrógeno 21BR",
     marca: "Logus",
@@ -306,7 +306,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 33,
+    id: 35,
     image: "/assets/imgs/grupos-electrogenos/logus-21a.webp",
     nombre: "Grupo Electrógeno 21BR Abierto",
     marca: "Logus",
@@ -315,7 +315,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 34,
+    id: 36,
     image: "/assets/imgs/grupos-electrogenos/logus-20.webp",
     nombre: "Grupo Electrógeno GLG20000EM",
     marca: "Logus",
@@ -324,7 +324,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 35,
+    id: 37,
     image: "/assets/imgs/grupos-electrogenos/kipor-18.webp",
     nombre: "Grupo Electrógeno KDE20SS3",
     marca: "Kipor",
@@ -333,7 +333,7 @@ export const gruposElectrogenos = [
     fase: "Trifásico",
   },
   {
-    id: 36,
+    id: 38,
     image: "/assets/imgs/grupos-electrogenos/kipor-19.webp",
     nombre: "Grupo Electrógeno KDE19STA3",
     marca: "Kipor",

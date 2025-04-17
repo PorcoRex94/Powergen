@@ -7,42 +7,50 @@ export const useProductFilters = (gruposElectrogenos) => {
   const [phases, setPhases] = useState([]);
 
   const filtered = useMemo(() => {
+    const normalize = (str) =>
+      str
+        ?.toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/(\d)\s+([a-z]+)/g, "$1$2") // 10 kva -> 10kva
+        .replace(/[^a-z0-9.\s]/g, ""); // remueve todo lo que no sea letra, número, punto, espacio
+
+    const tokenize = (str) => normalize(str).split(/\s+/).filter(Boolean);
+
     return gruposElectrogenos.filter((p) => {
+      const productTokens = tokenize(
+        `${p.nombre} ${p.marca} ${p.combustible} ${p.potencia} ${p.fase}`
+      );
+
+      // FILTRO DE BUSQUEDA (por texto libre)
       if (search) {
-        const normalize = (str) =>
-          str
-            ?.toLowerCase()
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .replace(/(\d)\s+([a-z]+)/g, "$1$2");
+        const searchTokens = tokenize(search);
 
-        const searchWords = normalize(search).split(/\s+/);
-        const productText = normalize(
-          `${p.nombre} ${p.marca} ${p.combustible} ${p.potencia} ${p.fase}`
-        );
-
-        const productWords = productText.split(/\s+/);
-
-        const matchesAllWords = searchWords.every((word) => {
-          if (/^\d/.test(word)) {
-            return productWords.some((w) => w.startsWith(word));
-          }
-          return productText.includes(word);
+        const matchesAllSearchWords = searchTokens.every((searchWord) => {
+          return productTokens.some((token) => token.includes(searchWord));
         });
 
-        if (!matchesAllWords) return false;
+        if (!matchesAllSearchWords) return false;
       }
 
-      if (brand && p.marca !== brand) return false;
-      if (combustion.length && !combustion.includes(p.combustible))
+      // FILTRO POR MARCA (select)
+      if (brand && normalize(p.marca) !== normalize(brand)) {
         return false;
+      }
+
+      // FILTRO POR COMBUSTIBLE (select)
+      if (combustion.length && !combustion.includes(p.combustible)) {
+        return false;
+      }
+
+      // FILTRO POR FASE (select)
       if (
         phases.length &&
-        !phases.some((fase) =>
-          p.fase?.toLowerCase().includes(fase.toLowerCase())
-        )
-      )
+        !phases.some((fase) => normalize(p.fase).includes(normalize(fase)))
+      ) {
         return false;
+      }
+
       return true;
     });
   }, [gruposElectrogenos, search, brand, combustion, phases]);
