@@ -203,6 +203,9 @@ export const Navbar = () => {
                 Contacto
               </Link>
             </li>
+            <li>
+              <Link to="/ventas">🛒</Link>
+            </li>
           </UlContainer>
         </div>
       </NavContainer>

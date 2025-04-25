@@ -7,6 +7,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "1000 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "650 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "550 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "450 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "450 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "375 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "350 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "275 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "200 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 10,
@@ -88,6 +97,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "200 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 11,
@@ -97,6 +107,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "198 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 12,
@@ -106,6 +117,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "170 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 13,
@@ -115,6 +127,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "170 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 14,
@@ -124,6 +137,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "165 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 15,
@@ -133,6 +147,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "150 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 16,
@@ -142,6 +157,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "125 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 17,
@@ -151,6 +167,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "125 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 18,
@@ -160,6 +177,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "110 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 19,
@@ -169,6 +187,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "110 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 20,
@@ -178,6 +197,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "100 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 21,
@@ -187,6 +207,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "88 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 22,
@@ -196,6 +217,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "70 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 23,
@@ -205,6 +227,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "69 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 24,
@@ -214,6 +237,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "69 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 25,
@@ -223,6 +247,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "69 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 26,
@@ -232,6 +257,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "65 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 27,
@@ -241,6 +267,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "50 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 28,
@@ -250,6 +277,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "41 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 29,
@@ -259,6 +287,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "41 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 30,
@@ -268,6 +297,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "41 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 31,
@@ -277,6 +307,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "38 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 32,
@@ -286,6 +317,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "35 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 33,
@@ -295,6 +327,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "26 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 34,
@@ -304,6 +337,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "21 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 35,
@@ -313,6 +347,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "21 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 36,
@@ -322,6 +357,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "18.7 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 37,
@@ -331,6 +367,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "18.5 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 38,
@@ -340,6 +377,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "18.5 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 39,
@@ -349,6 +387,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "17 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 40,
@@ -358,6 +397,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "14 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 41,
@@ -367,6 +407,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "13 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 42,
@@ -376,6 +417,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "10.5 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 43,
@@ -385,6 +427,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "10.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 44,
@@ -394,6 +437,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "10.5 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 45,
@@ -403,6 +447,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "10.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 46,
@@ -412,6 +457,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "10.5 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 47,
@@ -421,6 +467,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "10.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 48,
@@ -430,6 +477,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "9.5 kva",
     fase: "Monofásico/Trifásico",
+    precio: 1250,
   },
   {
     id: 49,
@@ -439,6 +487,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "9.5 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 50,
@@ -448,6 +497,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "9.5 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 51,
@@ -457,6 +507,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "9.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 52,
@@ -466,6 +517,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "9.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 53,
@@ -475,6 +527,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "9.5 kva",
     fase: "Monofásico/Trifásico",
+    precio: 1250,
   },
   {
     id: 54,
@@ -484,6 +537,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "8.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 55,
@@ -493,6 +547,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "8.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 56,
@@ -502,6 +557,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "8.5 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 57,
@@ -511,6 +567,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "8.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 58,
@@ -520,6 +577,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "8 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 59,
@@ -529,6 +587,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "7.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 60,
@@ -538,6 +597,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "6.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 61,
@@ -547,6 +607,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "6.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 62,
@@ -556,6 +617,7 @@ export const gruposElectrogenos = [
     combustible: "Gas",
     potencia: "6.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 63,
@@ -565,6 +627,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "6 kva",
     fase: "Trifásico",
+    precio: 1250,
   },
   {
     id: 64,
@@ -574,6 +637,7 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "6 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 65,
@@ -583,6 +647,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "5.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 66,
@@ -592,6 +657,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "5.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 67,
@@ -601,6 +667,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "5.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 68,
@@ -610,6 +677,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "4.5 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 69,
@@ -619,6 +687,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "3 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 70,
@@ -628,6 +697,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "3 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 71,
@@ -637,6 +707,7 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "2 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
   {
     id: 72,
@@ -646,5 +717,6 @@ export const gruposElectrogenos = [
     combustible: "Nafta",
     potencia: "0.9 kva",
     fase: "Monofásico",
+    precio: 1250,
   },
 ];
