@@ -7,7 +7,7 @@ export const Card = styled.div`
   background: #fff;
   transition: box-shadow 0.2s;
   display: flex;
-  height: 250px;
+  height: 350px;
 
   &:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
@@ -37,14 +37,16 @@ export const Content = styled.div`
   padding: 1rem;
   text-align: center;
   width: 65%;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 90%;
+  gap: 30px;
 `;
 
 export const ContainerTextFlex = styled.div`

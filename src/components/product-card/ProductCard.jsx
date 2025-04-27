@@ -11,6 +11,9 @@ import {
 } from "./product-card-styles.js";
 import { useCartStore } from "../../store/cartStore.js";
 import { useState } from "react";
+import { ButtonInDec } from "../detalles-grupos/detalles-grupos-styles.js";
+import { CiCirclePlus } from "react-icons/ci";
+import { CiCircleMinus } from "react-icons/ci";
 
 export const ProductCard = ({ gruposElectrogenos }) => {
   const navigate = useNavigate();
@@ -20,7 +23,7 @@ export const ProductCard = ({ gruposElectrogenos }) => {
   const [cantidad, setCantidad] = useState(1);
 
   const handleAgregar = () => {
-    addToCart({ ...grupo, cantidad });
+    addToCart({ ...gruposElectrogenos, cantidad });
   };
 
   const handleCardClick = () => {
@@ -40,48 +43,58 @@ export const ProductCard = ({ gruposElectrogenos }) => {
       <Content>
         <Title>{gruposElectrogenos.nombre}</Title>
         <TextContainer>
-          <ContainerTextFlex>
-            <Text>Fase: {gruposElectrogenos.fase}</Text>
-            <Text>Marca: {gruposElectrogenos.marca}</Text>
-          </ContainerTextFlex>
-          <ContainerTextFlex>
-            <Text>Potencia: {gruposElectrogenos.potencia}</Text>
-            <Text>Combustible: {gruposElectrogenos.combustible}</Text>
-          </ContainerTextFlex>
           <div
             style={{
               padding: "1rem",
               display: "flex",
               alignItems: "center",
-              gap: "25px",
+              gap: "200px",
             }}
           >
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: "1rem",
+                gap: "1.5rem",
                 margin: "1rem 0",
               }}
             >
-              <button onClick={decrease}>➖</button>
+              <ButtonInDec
+                onClick={(e) => {
+                  e.stopPropagation();
+                  decrease();
+                }}
+              >
+                <CiCircleMinus />
+              </ButtonInDec>
               <input
                 type="text"
                 readOnly
                 value={cantidad}
                 style={{
-                  width: "40px",
+                  width: "55px",
+                  height: "40px",
                   textAlign: "center",
                   fontWeight: "bold",
                   border: "1px solid #ccc",
                   borderRadius: "4px",
                 }}
               />
-              <button onClick={increase}>➕</button>
+              <ButtonInDec
+                onClick={(e) => {
+                  e.stopPropagation();
+                  increase();
+                }}
+              >
+                <CiCirclePlus />
+              </ButtonInDec>
             </div>
 
             <button
-              onClick={handleAgregar}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleAgregar();
+              }}
               style={{
                 padding: "0.5rem 1rem",
                 fontWeight: "bold",
@@ -95,6 +108,14 @@ export const ProductCard = ({ gruposElectrogenos }) => {
               Agregar al carrito
             </button>
           </div>
+          <ContainerTextFlex>
+            <Text>Fase: {gruposElectrogenos.fase}</Text>
+            <Text>Marca: {gruposElectrogenos.marca}</Text>
+          </ContainerTextFlex>
+          <ContainerTextFlex>
+            <Text>Potencia: {gruposElectrogenos.potencia}</Text>
+            <Text>Combustible: {gruposElectrogenos.combustible}</Text>
+          </ContainerTextFlex>
         </TextContainer>
       </Content>
     </Card>

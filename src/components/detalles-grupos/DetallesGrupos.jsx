@@ -2,6 +2,9 @@ import { useParams } from "react-router-dom";
 import { useCartStore } from "../../store/cartStore";
 import { gruposElectrogenos } from "../../data/gruposElectrogenos";
 import { useState } from "react";
+import { ButtonCart, ButtonInDec } from "./detalles-grupos-styles";
+import { CiCirclePlus } from "react-icons/ci";
+import { CiCircleMinus } from "react-icons/ci";
 
 export const DetallesGrupos = () => {
   const { id } = useParams();
@@ -36,36 +39,27 @@ export const DetallesGrupos = () => {
           margin: "1rem 0",
         }}
       >
-        <button onClick={decrease}>➖</button>
+        <ButtonInDec onClick={decrease}>
+          <CiCircleMinus />
+        </ButtonInDec>
         <input
           type="text"
-          readOnly
           value={cantidad}
           style={{
-            width: "40px",
+            width: "55px",
+            height: "40px",
             textAlign: "center",
             fontWeight: "bold",
             border: "1px solid #ccc",
             borderRadius: "4px",
           }}
         />
-        <button onClick={increase}>➕</button>
+        <ButtonInDec onClick={increase}>
+          <CiCirclePlus />
+        </ButtonInDec>
       </div>
 
-      <button
-        onClick={handleAgregar}
-        style={{
-          padding: "0.5rem 1rem",
-          fontWeight: "bold",
-          background: "#007bff",
-          color: "white",
-          border: "none",
-          borderRadius: "4px",
-          cursor: "pointer",
-        }}
-      >
-        Agregar al carrito
-      </button>
+      <ButtonCart onClick={handleAgregar}>Agregar al carrito</ButtonCart>
     </div>
   );
 };
