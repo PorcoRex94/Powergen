@@ -7,7 +7,7 @@ export const Card = styled.div`
   background: #fff;
   transition: box-shadow 0.2s;
   display: flex;
-  height: 350px;
+  height: 325px;
 
   &:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
@@ -16,7 +16,7 @@ export const Card = styled.div`
 
 export const Title = styled.h3`
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
 `;
 
 export const Text = styled.p`
@@ -46,11 +46,19 @@ export const TextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   height: 90%;
-  gap: 30px;
+  width: 100%;
 `;
 
 export const ContainerTextFlex = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 75%;
+  width: 100%;
+`;
+
+export const ContainerGlobalTextFlex = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  width: 80%;
 `;

@@ -8,6 +8,7 @@ import {
   TextContainer,
   ContainerTextFlex,
   Text,
+  ContainerGlobalTextFlex,
 } from "./product-card-styles.js";
 import { useCartStore } from "../../store/cartStore.js";
 import { useState } from "react";
@@ -43,9 +44,19 @@ export const ProductCard = ({ gruposElectrogenos }) => {
       <Content>
         <Title>{gruposElectrogenos.nombre}</Title>
         <TextContainer>
+          <ContainerGlobalTextFlex>
+            <ContainerTextFlex>
+              <Text>Fase: {gruposElectrogenos.fase}</Text>
+              <Text>Marca: {gruposElectrogenos.marca}</Text>
+            </ContainerTextFlex>
+            <ContainerTextFlex>
+              <Text>Potencia: {gruposElectrogenos.potencia}</Text>
+              <Text>Combustible: {gruposElectrogenos.combustible}</Text>
+            </ContainerTextFlex>
+          </ContainerGlobalTextFlex>
           <div
             style={{
-              padding: "1rem",
+              padding: "0.5rem",
               display: "flex",
               alignItems: "center",
               gap: "200px",
@@ -108,14 +119,6 @@ export const ProductCard = ({ gruposElectrogenos }) => {
               Agregar al carrito
             </button>
           </div>
-          <ContainerTextFlex>
-            <Text>Fase: {gruposElectrogenos.fase}</Text>
-            <Text>Marca: {gruposElectrogenos.marca}</Text>
-          </ContainerTextFlex>
-          <ContainerTextFlex>
-            <Text>Potencia: {gruposElectrogenos.potencia}</Text>
-            <Text>Combustible: {gruposElectrogenos.combustible}</Text>
-          </ContainerTextFlex>
         </TextContainer>
       </Content>
     </Card>
