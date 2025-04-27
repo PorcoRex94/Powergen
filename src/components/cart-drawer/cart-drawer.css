@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 30vw;
+  width: 50vw;
   height: 100vh;
   background: white;
   z-index: 100;
@@ -27,4 +27,15 @@
 .hache__dos {
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.global__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.grupo__img {
+  width: 100px;
 }
