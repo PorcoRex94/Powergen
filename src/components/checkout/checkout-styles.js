@@ -16,8 +16,8 @@ export const InfoProductContainer = styled.div`
   align-items: center;
   padding: 1rem;
   gap: 25px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 5);
-  border-radius: 25px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
   img {
     width: 300px;
     height: 150px;
