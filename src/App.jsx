@@ -7,6 +7,7 @@ import { VentasPage } from "./pages/VentasPage";
 import { DetallesGrupos } from "./components/detalles-grupos/DetallesGrupos";
 import { Cart } from "./components/cart/Cart";
 import { CartDrawer } from "./components/cart-drawer/CartDrawer";
+import { Checkout } from "./components/checkout/Checkout";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<GlobalComponents />}>
           <Route index element={<Index />} />
           <Route path="/carrito" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/grupos/*" element={<GruposElectrogenos />} />
           <Route path="/energias" element={<EnergiasAlternativas />} />
           <Route path="/ventas" element={<VentasPage />} />

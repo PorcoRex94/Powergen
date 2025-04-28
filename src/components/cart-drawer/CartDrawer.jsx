@@ -8,6 +8,7 @@ import {
   ButtonCart,
   ButtonInDec,
 } from "../detalles-grupos/detalles-grupos-styles";
+import { useNavigate } from "react-router-dom";
 
 export const CartDrawer = () => {
   const {
@@ -19,6 +20,7 @@ export const CartDrawer = () => {
     isCartOpen,
     closeCart,
   } = useCartStore();
+  const navigate = useNavigate();
 
   const total = cart.reduce(
     (acc, item) => acc + item.precio * item.cantidad,
@@ -27,9 +29,9 @@ export const CartDrawer = () => {
 
   if (!isCartOpen) return null;
 
-  const handleAgregar = () => {
-    addToCart({ ...grupo, cantidad });
-    // 👉 opcional: mostrar side cart después
+  const handleCheckout = () => {
+    closeCart();
+    navigate("/checkout");
   };
 
   return (
@@ -93,7 +95,10 @@ export const CartDrawer = () => {
               </button>
             </>
           )}
-          <ButtonCart onClick={handleAgregar}>Finalizar Compra</ButtonCart>
+
+          {cart.length >= 1 && (
+            <ButtonCart onClick={handleCheckout}>Finalizar Compra</ButtonCart>
+          )}
         </div>
       </div>
     </>
