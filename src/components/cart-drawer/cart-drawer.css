@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 50vw;
+  width: 30vw;
   height: 100vh;
   background: white;
   z-index: 100;
@@ -31,11 +31,23 @@
 
 .global__container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.top__container {
+  display: flex;
   align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.bottom__container {
+  display: flex;
   gap: 25px;
 }
 
 .grupo__img {
-  width: 100px;
+  width: 75px;
+  height: auto;
 }

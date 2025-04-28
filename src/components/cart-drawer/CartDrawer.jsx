@@ -42,22 +42,26 @@ export const CartDrawer = () => {
             style={{ marginBottom: "1.5rem" }}
             className="global__container"
           >
-            <img src={item.image} alt={item.nombre} className="grupo__img" />
-            <h4>{item.nombre}</h4>
-            <p>Precio: ${item.precio}</p>
-            <div
-              style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
-            >
-              <ButtonInDec onClick={() => decreaseQuantity(item.id)}>
-                <CiCircleMinus />
-              </ButtonInDec>
-              <span>{item.cantidad}</span>
-              <ButtonInDec onClick={() => increaseQuantity(item.id)}>
-                <CiCirclePlus />
-              </ButtonInDec>
-              <button onClick={() => removeFromCart(item.id)}>🗑</button>
+            <div className="top__container">
+              <img src={item.image} alt={item.nombre} className="grupo__img" />
+              <h4>{item.nombre}</h4>
             </div>
-            <p>Subtotal: ${item.precio * item.cantidad}</p>
+            <div className="bottom__container">
+              <p>Precio: ${item.precio}</p>
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
+              >
+                <ButtonInDec onClick={() => decreaseQuantity(item.id)}>
+                  <CiCircleMinus />
+                </ButtonInDec>
+                <span>{item.cantidad}</span>
+                <ButtonInDec onClick={() => increaseQuantity(item.id)}>
+                  <CiCirclePlus />
+                </ButtonInDec>
+                <button onClick={() => removeFromCart(item.id)}>🗑</button>
+              </div>
+              <p>Subtotal: ${item.precio * item.cantidad}</p>
+            </div>
           </div>
         ))}
 
