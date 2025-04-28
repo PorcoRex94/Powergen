@@ -7,7 +7,7 @@ export const GlobalContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
 `;
 
 export const InfoProductContainer = styled.div`
