@@ -1,3 +1,10 @@
+.cart-drawer {
+  transform: translateX(100%);
+}
+.cart-drawer.open {
+  transform: translateX(0);
+}
+
 .cart-overlay {
   position: fixed;
   inset: 0;
@@ -15,13 +22,43 @@
   z-index: 100;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
   padding: 1rem;
-  overflow-y: auto;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.cart-drawer.open {
-  transform: translateX(0);
+.btn__carrito__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__top {
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+  color: red;
+}
+
+.cart-products {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.cart-footer {
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  background: white;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .hache__dos {
@@ -32,14 +69,13 @@
 .global__container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
 }
 
 .top__container {
   display: flex;
   align-items: center;
-  gap: 10px;
-  text-align: center;
+  gap: 35px;
+  width: 85%;
 }
 
 .bottom__container {
@@ -50,4 +86,15 @@
 .grupo__img {
   width: 75px;
   height: auto;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background-color: white;
 }
