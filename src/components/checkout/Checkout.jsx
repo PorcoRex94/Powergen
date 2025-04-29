@@ -46,7 +46,9 @@ export const Checkout = () => {
         "BENEFICIOS PREMIUM: \n 1-Extensión de garantía técnica a un total de 12 meses.\n 2-Reforzado de fábrica o se refuerza en el primer service.\n 3-Pre entrega de puesta en marcha y ensayo de esfuerzo. \n4-Servicio técnico durante la vida útil de su equipo, acceso al 0810 las 24 hs, visitas técnicas.\n Asesoramiento permanente, servicio de post venta full, provisión de repuestos express y más."
       );
     } else {
-      setDescription("Producto estándar, ideal para uso general.");
+      setDescription(
+        "STANDARD: \n1-Garantía de fábrica de 6 meses \n2-Venta a caja cerrada."
+      );
     }
   };
 
@@ -77,7 +79,7 @@ export const Checkout = () => {
               onChange={handleProductTypeChange}
             />
             <label htmlFor="standard" style={{ marginLeft: "0.5rem" }}>
-              Opción Premium
+              Opción Premium (Recomendada)
             </label>
           </div>
           <div>

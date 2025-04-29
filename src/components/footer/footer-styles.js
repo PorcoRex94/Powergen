@@ -64,6 +64,8 @@ export const IconContainerDown = styled.div`
 
   .icon__down {
     font-size: 1.2rem;
+    position: relative;
+    top: 3px;
   }
 
   a {
