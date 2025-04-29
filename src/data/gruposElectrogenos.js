@@ -7,7 +7,8 @@ export const gruposElectrogenos = [
     combustible: "Diesel",
     potencia: "1000 kva",
     fase: "Trifásico",
-    precio: 1250,
+    precioStandard: 1250,
+    precioPremium: 1750,
   },
   {
     id: 2,

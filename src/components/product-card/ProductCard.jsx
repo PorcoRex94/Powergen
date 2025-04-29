@@ -53,72 +53,27 @@ export const ProductCard = ({ gruposElectrogenos }) => {
               <Text>Potencia: {gruposElectrogenos.potencia}</Text>
               <Text>Combustible: {gruposElectrogenos.combustible}</Text>
             </ContainerTextFlex>
-          </ContainerGlobalTextFlex>
-          <div
-            style={{
-              padding: "0.5rem",
-              display: "flex",
-              alignItems: "center",
-              gap: "200px",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "1.5rem",
-                margin: "1rem 0",
-              }}
-            >
-              <ButtonInDec
+            <ContainerTextFlex>
+              <Text>Precio: ${gruposElectrogenos.precio} </Text>
+              <button
                 onClick={(e) => {
                   e.stopPropagation();
-                  decrease();
+                  handleAgregar();
                 }}
-              >
-                <CiCircleMinus />
-              </ButtonInDec>
-              <input
-                type="text"
-                readOnly
-                value={cantidad}
                 style={{
-                  width: "55px",
-                  height: "40px",
-                  textAlign: "center",
+                  padding: "0.5rem 1rem",
                   fontWeight: "bold",
-                  border: "1px solid #ccc",
+                  background: "#007bff",
+                  color: "white",
+                  border: "none",
                   borderRadius: "4px",
-                }}
-              />
-              <ButtonInDec
-                onClick={(e) => {
-                  e.stopPropagation();
-                  increase();
+                  cursor: "pointer",
                 }}
               >
-                <CiCirclePlus />
-              </ButtonInDec>
-            </div>
-
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                handleAgregar();
-              }}
-              style={{
-                padding: "0.5rem 1rem",
-                fontWeight: "bold",
-                background: "#007bff",
-                color: "white",
-                border: "none",
-                borderRadius: "4px",
-                cursor: "pointer",
-              }}
-            >
-              Agregar al carrito
-            </button>
-          </div>
+                Agregar al carrito
+              </button>
+            </ContainerTextFlex>
+          </ContainerGlobalTextFlex>
         </TextContainer>
       </Content>
     </Card>

@@ -1,17 +1,26 @@
+import { useState } from "react";
 import { useCartStore } from "../../store/cartStore";
 import {
   ContainerProduct,
   GlobalContainer,
   InfoProductContainer,
+  InputContainer,
+  PremiumStandardContainer,
 } from "./checkout-styles";
 
 export const Checkout = () => {
   const { cart } = useCartStore();
+  const [productType, setProductType] = useState("standard");
 
   const total = cart.reduce(
     (acc, item) => acc + item.precio * item.cantidad,
     0
   );
+
+  const adjustedTotal =
+    productType === "premium"
+      ? total * 1.2 // Aumentar un 20% si es Premium
+      : total;
 
   const paymentMethods = [
     "Tarjeta de Crédito",
@@ -34,8 +43,33 @@ export const Checkout = () => {
           </InfoProductContainer>
         ))}
       </ContainerProduct>
+      <PremiumStandardContainer>
+        <h2>Selecciona el tipo de producto:</h2>
+        <InputContainer>
+          <label>
+            <input
+              type="radio"
+              name="productType"
+              value="standard"
+              checked={productType === "standard"}
+              onChange={() => setProductType("standard")}
+            />
+            Producto Standard
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="productType"
+              value="premium"
+              checked={productType === "premium"}
+              onChange={() => setProductType("premium")}
+            />
+            Producto Premium (+20%)
+          </label>
+        </InputContainer>
+      </PremiumStandardContainer>
 
-      <h2>Total: ${total}</h2>
+      <h2>Total: ${adjustedTotal}</h2>
 
       <h2>Elegí tu forma de pago:</h2>
       <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
