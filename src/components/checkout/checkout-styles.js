@@ -35,20 +35,18 @@ export const PremiumStandardContainer = styled.div`
   padding: 1rem;
   text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 25px;
 `;
 
 export const InputContainer = styled.div`
   display: flex;
-  gap: 35px;
+  gap: 20px;
+`;
 
-  label {
-    margin-right: 20px;
-    cursor: pointer;
-  }
-
-  input[type="radio"] {
-    margin-right: 8px;
-  }
+export const ContainerText = styled.div`
+  width: 62%;
+  text-align: center;
 `;
