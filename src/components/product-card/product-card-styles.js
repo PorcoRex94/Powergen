@@ -7,7 +7,8 @@ export const Card = styled.div`
   background: #fff;
   transition: box-shadow 0.2s;
   display: flex;
-  height: 325px;
+  height: 350px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 
   &:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
@@ -31,6 +32,8 @@ export const ImageWrapper = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 `;
 
 export const Content = styled.div`
@@ -47,18 +50,23 @@ export const TextContainer = styled.div`
   align-items: center;
   height: 90%;
   width: 100%;
+
+  .containerTextFlex__dif {
+    margin-top: 1.8rem;
+  }
 `;
 
 export const ContainerTextFlex = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 35px;
   width: 100%;
 `;
 
 export const ContainerGlobalTextFlex = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 25px;
-  width: 80%;
+  justify-content: center;
+  gap: 15px;
+  width: 95%;
 `;

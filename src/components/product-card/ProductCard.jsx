@@ -12,9 +12,6 @@ import {
 } from "./product-card-styles.js";
 import { useCartStore } from "../../store/cartStore.js";
 import { useState } from "react";
-import { ButtonInDec } from "../detalles-grupos/detalles-grupos-styles.js";
-import { CiCirclePlus } from "react-icons/ci";
-import { CiCircleMinus } from "react-icons/ci";
 
 export const ProductCard = ({ gruposElectrogenos }) => {
   const navigate = useNavigate();
@@ -54,7 +51,29 @@ export const ProductCard = ({ gruposElectrogenos }) => {
               <Text>Combustible: {gruposElectrogenos.combustible}</Text>
             </ContainerTextFlex>
             <ContainerTextFlex>
-              <Text>Precio: ${gruposElectrogenos.precio} </Text>
+              <Text>Precio Premium: ${gruposElectrogenos.precioPremium} </Text>
+              <Text>
+                Precio Standard: ${gruposElectrogenos.precioStandard}{" "}
+              </Text>
+            </ContainerTextFlex>
+            <ContainerTextFlex className="containerTextFlex__dif">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleCardClick();
+                }}
+                style={{
+                  padding: "0.5rem 1rem",
+                  fontWeight: "bold",
+                  background: "#007bff",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "4px",
+                  cursor: "pointer",
+                }}
+              >
+                Más Información
+              </button>
               <button
                 onClick={(e) => {
                   e.stopPropagation();
