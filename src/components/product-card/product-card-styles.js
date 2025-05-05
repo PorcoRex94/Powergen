@@ -8,7 +8,7 @@ export const Card = styled.div`
   transition: box-shadow 0.2s;
   display: flex;
   height: 350px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
   &:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
@@ -32,7 +32,7 @@ export const ImageWrapper = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
 `;
 
