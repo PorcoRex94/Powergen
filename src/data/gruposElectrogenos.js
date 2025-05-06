@@ -2,18 +2,29 @@ export const gruposElectrogenos = [
   {
     id: 1,
     image: "/assets/imgs/grupos-electrogenos/cummins-1000.webp",
-    nombre: "Grupo Electrógeno CS1000S",
+    images: [
+      "/assets/imgs/grupos-electrogenos/cummins-650.webp",
+      "/assets/imgs/grupos-electrogenos/logus-450.webp",
+      "/assets/imgs/grupos-electrogenos/cummins-550.webp",
+    ],
+    nombre: "Cummins CS1000S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "1000 kva",
     fase: "Trifásico",
     precioStandard: 1250,
     precioPremium: 1750,
+    specs: [
+      { label: "Motor", value: "Perkins 1104C-44TG2" },
+      { label: "Consumo", value: "8.4 L/h" },
+      { label: "Arranque", value: "Eléctrico 12V" },
+      { label: "Nivel de ruido", value: "65 dB" },
+    ],
   },
   {
     id: 2,
     image: "/assets/imgs/grupos-electrogenos/cummins-650.webp",
-    nombre: "Grupo Electrógeno CS650S",
+    nombre: "Cummins CS650S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "650 kva",
@@ -24,7 +35,7 @@ export const gruposElectrogenos = [
   {
     id: 3,
     image: "/assets/imgs/grupos-electrogenos/cummins-550.webp",
-    nombre: "Grupo Electrógeno CS550S",
+    nombre: "Cummins CS550S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "550 kva",
@@ -35,7 +46,7 @@ export const gruposElectrogenos = [
   {
     id: 4,
     image: "/assets/imgs/grupos-electrogenos/cummins-450.webp",
-    nombre: "Grupo Electrógeno CS450S",
+    nombre: "Cummins CS450S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "450 kva",
@@ -46,7 +57,7 @@ export const gruposElectrogenos = [
   {
     id: 5,
     image: "/assets/imgs/grupos-electrogenos/logus-450.webp",
-    nombre: "Grupo Electrógeno 450 Br",
+    nombre: "Logus 450 Br",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "450 kva",
@@ -57,7 +68,7 @@ export const gruposElectrogenos = [
   {
     id: 6,
     image: "/assets/imgs/grupos-electrogenos/cummins-375.webp",
-    nombre: "Grupo Electrógeno CS375S",
+    nombre: "Cummins CS375S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "375 kva",
@@ -68,7 +79,7 @@ export const gruposElectrogenos = [
   {
     id: 7,
     image: "/assets/imgs/grupos-electrogenos/cummins-350.webp",
-    nombre: "Grupo Electrógeno YNS350S",
+    nombre: "Cummins YNS350S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "350 kva",
@@ -79,7 +90,7 @@ export const gruposElectrogenos = [
   {
     id: 8,
     image: "/assets/imgs/grupos-electrogenos/cummins-275.webp",
-    nombre: "Grupo Electrógeno YNS275S",
+    nombre: "Cummins YNS275S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "275 kva",
@@ -90,7 +101,7 @@ export const gruposElectrogenos = [
   {
     id: 9,
     image: "/assets/imgs/grupos-electrogenos/logus-200.webp",
-    nombre: "Grupo Electrógeno 200 Br",
+    nombre: "Logus 200 Br",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "200 kva",
@@ -101,7 +112,7 @@ export const gruposElectrogenos = [
   {
     id: 10,
     image: "/assets/imgs/grupos-electrogenos/cummins-c200.webp",
-    nombre: "Grupo Electrógeno CS200A",
+    nombre: "Cummins CS200A",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "200 kva",
@@ -112,7 +123,7 @@ export const gruposElectrogenos = [
   {
     id: 11,
     image: "/assets/imgs/grupos-electrogenos/cummins-y200.webp",
-    nombre: "Grupo Electrógeno YNS200S",
+    nombre: "Cummins YNS200S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "198 kva",
@@ -123,7 +134,7 @@ export const gruposElectrogenos = [
   {
     id: 12,
     image: "/assets/imgs/grupos-electrogenos/cummins-170.webp",
-    nombre: "Grupo Electrógeno YNS170S",
+    nombre: "Cummins YNS170S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "170 kva",
@@ -134,7 +145,7 @@ export const gruposElectrogenos = [
   {
     id: 13,
     image: "/assets/imgs/grupos-electrogenos/cummins-y170.webp",
-    nombre: "Grupo Electrógeno YNS170A",
+    nombre: "Cummins YNS170A",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "170 kva",
@@ -145,7 +156,7 @@ export const gruposElectrogenos = [
   {
     id: 14,
     image: "/assets/imgs/grupos-electrogenos/logus-200.webp",
-    nombre: "Grupo Electrógeno 165 Br",
+    nombre: "Logus 165 Br",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "165 kva",
@@ -156,7 +167,7 @@ export const gruposElectrogenos = [
   {
     id: 15,
     image: "/assets/imgs/grupos-electrogenos/cummins-150.webp",
-    nombre: "Grupo Electrógeno YNS150SG",
+    nombre: "Cummins YNS150SG",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "150 kva",
@@ -167,7 +178,7 @@ export const gruposElectrogenos = [
   {
     id: 16,
     image: "/assets/imgs/grupos-electrogenos/logus-125.webp",
-    nombre: "Grupo Electrógeno 125 Br",
+    nombre: "Logus 125 Br",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "125 kva",
@@ -178,7 +189,7 @@ export const gruposElectrogenos = [
   {
     id: 17,
     image: "/assets/imgs/grupos-electrogenos/logus-125a.webp",
-    nombre: "Grupo Electrógeno 125 Br Abierto",
+    nombre: "Logus 125 Br Abierto",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "125 kva",
@@ -189,7 +200,7 @@ export const gruposElectrogenos = [
   {
     id: 18,
     image: "/assets/imgs/grupos-electrogenos/cummins-110.webp",
-    nombre: "Grupo Electrógeno YNS110S",
+    nombre: "Cummins YNS110S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "110 kva",
@@ -200,7 +211,7 @@ export const gruposElectrogenos = [
   {
     id: 19,
     image: "/assets/imgs/grupos-electrogenos/cummins-110a.webp",
-    nombre: "Grupo Electrógeno YNS110A",
+    nombre: "Cummins YNS110A",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "110 kva",
@@ -211,7 +222,7 @@ export const gruposElectrogenos = [
   {
     id: 20,
     image: "/assets/imgs/grupos-electrogenos/pramac-100.webp",
-    nombre: "Grupo Electrógeno GGW100G",
+    nombre: "Pramac GGW100G",
     marca: "Pramac",
     combustible: "Gas",
     potencia: "100 kva",
@@ -222,7 +233,7 @@ export const gruposElectrogenos = [
   {
     id: 21,
     image: "/assets/imgs/grupos-electrogenos/cummins-88.webp",
-    nombre: "Grupo Electrógeno YNS88S",
+    nombre: "Cummins YNS88S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "88 kva",
@@ -233,7 +244,7 @@ export const gruposElectrogenos = [
   {
     id: 22,
     image: "/assets/imgs/grupos-electrogenos/pramac-70.webp",
-    nombre: "Grupo Electrógeno GGW070",
+    nombre: "Pramac GGW070",
     marca: "Pramac",
     combustible: "Gas",
     potencia: "70 kva",
@@ -244,7 +255,7 @@ export const gruposElectrogenos = [
   {
     id: 23,
     image: "/assets/imgs/grupos-electrogenos/logus-69.webp",
-    nombre: "Grupo Electrógeno 69BR",
+    nombre: "Logus 69BR",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "69 kva",
@@ -255,7 +266,7 @@ export const gruposElectrogenos = [
   {
     id: 24,
     image: "/assets/imgs/grupos-electrogenos/logus-69.webp",
-    nombre: "Grupo Electrógeno 69BR GAS",
+    nombre: "Logus 69BR GAS",
     marca: "Logus",
     combustible: "Gas",
     potencia: "69 kva",
@@ -266,7 +277,7 @@ export const gruposElectrogenos = [
   {
     id: 25,
     image: "/assets/imgs/grupos-electrogenos/logus-69a.webp",
-    nombre: "Grupo Electrógeno 69BR Abierto",
+    nombre: "Logus 69BR Abierto",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "69 kva",
@@ -277,7 +288,7 @@ export const gruposElectrogenos = [
   {
     id: 26,
     image: "/assets/imgs/grupos-electrogenos/cummins-65.webp",
-    nombre: "Grupo Electrógeno YNS65S",
+    nombre: "Cummins YNS65S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "65 kva",
@@ -288,7 +299,7 @@ export const gruposElectrogenos = [
   {
     id: 27,
     image: "/assets/imgs/grupos-electrogenos/pramac-50.webp",
-    nombre: "Grupo Electrógeno GGW050",
+    nombre: "Pramac GGW050",
     marca: "Pramac",
     combustible: "Gas",
     potencia: "50 kva",
@@ -299,7 +310,7 @@ export const gruposElectrogenos = [
   {
     id: 28,
     image: "/assets/imgs/grupos-electrogenos/logus-41.webp",
-    nombre: "Grupo Electrógeno 41BR",
+    nombre: "Logus 41BR",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "41 kva",
@@ -310,7 +321,7 @@ export const gruposElectrogenos = [
   {
     id: 29,
     image: "/assets/imgs/grupos-electrogenos/logus-41.webp",
-    nombre: "Grupo Electrógeno 41BR GAS",
+    nombre: "Logus 41BR GAS",
     marca: "Logus",
     combustible: "Gas",
     potencia: "41 kva",
@@ -321,7 +332,7 @@ export const gruposElectrogenos = [
   {
     id: 30,
     image: "/assets/imgs/grupos-electrogenos/logus-41a.webp",
-    nombre: "Grupo Electrógeno 41BR Abierto",
+    nombre: "Logus 41BR Abierto",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "41 kva",
@@ -332,7 +343,7 @@ export const gruposElectrogenos = [
   {
     id: 31,
     image: "/assets/imgs/grupos-electrogenos/cummins-42.webp",
-    nombre: "Grupo Electrógeno YNS42S",
+    nombre: "Cummins YNS42S",
     marca: "Cummins",
     combustible: "Diesel",
     potencia: "38 kva",
@@ -343,7 +354,7 @@ export const gruposElectrogenos = [
   {
     id: 32,
     image: "/assets/imgs/grupos-electrogenos/pramac-35.webp",
-    nombre: "Grupo Electrógeno GGW035",
+    nombre: "Pramac GGW035",
     marca: "Pramac",
     combustible: "Gas",
     potencia: "35 kva",
@@ -354,7 +365,7 @@ export const gruposElectrogenos = [
   {
     id: 33,
     image: "/assets/imgs/grupos-electrogenos/kipor-26.webp",
-    nombre: "Grupo Electrógeno KDE30SS3",
+    nombre: "Kipor KDE30SS3",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "26 kva",
@@ -365,7 +376,7 @@ export const gruposElectrogenos = [
   {
     id: 34,
     image: "/assets/imgs/grupos-electrogenos/logus-21.webp",
-    nombre: "Grupo Electrógeno 21BR",
+    nombre: "Logus 21BR",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "21 kva",
@@ -376,7 +387,7 @@ export const gruposElectrogenos = [
   {
     id: 35,
     image: "/assets/imgs/grupos-electrogenos/logus-21a.webp",
-    nombre: "Grupo Electrógeno 21BR Abierto",
+    nombre: "Logus 21BR Abierto",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "21 kva",
@@ -387,7 +398,7 @@ export const gruposElectrogenos = [
   {
     id: 36,
     image: "/assets/imgs/grupos-electrogenos/logus-20.webp",
-    nombre: "Grupo Electrógeno GLG20000EM",
+    nombre: "Logus GLG20000EM",
     marca: "Logus",
     combustible: "Gas",
     potencia: "18.7 kva",
@@ -398,7 +409,7 @@ export const gruposElectrogenos = [
   {
     id: 37,
     image: "/assets/imgs/grupos-electrogenos/kipor-18.webp",
-    nombre: "Grupo Electrógeno KDE20SS3",
+    nombre: "Kipor KDE20SS3",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "18.5 kva",
@@ -409,7 +420,7 @@ export const gruposElectrogenos = [
   {
     id: 38,
     image: "/assets/imgs/grupos-electrogenos/kipor-19.webp",
-    nombre: "Grupo Electrógeno KDE19STA3",
+    nombre: "Kipor KDE19STA3",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "18.5 kva",
@@ -420,7 +431,7 @@ export const gruposElectrogenos = [
   {
     id: 39,
     image: "/assets/imgs/grupos-electrogenos/pramac-20.webp",
-    nombre: "Grupo Electrógeno GA20000",
+    nombre: "Pramac GA20000",
     marca: "Pramac",
     combustible: "Gas",
     potencia: "17 kva",
@@ -431,7 +442,7 @@ export const gruposElectrogenos = [
   {
     id: 40,
     image: "/assets/imgs/grupos-electrogenos/kipor-14.webp",
-    nombre: "Grupo Electrógeno KDE19STA",
+    nombre: "Kipor KDE19STA",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "14 kva",
@@ -442,7 +453,7 @@ export const gruposElectrogenos = [
   {
     id: 41,
     image: "/assets/imgs/grupos-electrogenos/pramac-13.webp",
-    nombre: "Grupo Electrógeno GA20000",
+    nombre: "Pramac GA20000",
     marca: "Pramac",
     combustible: "Gas",
     potencia: "13 kva",
@@ -453,7 +464,7 @@ export const gruposElectrogenos = [
   {
     id: 42,
     image: "/assets/imgs/grupos-electrogenos/kipor-10.webp",
-    nombre: "Grupo Electrógeno KGE12E3",
+    nombre: "Kipor KGE12E3",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "10.5 kva",
@@ -464,7 +475,7 @@ export const gruposElectrogenos = [
   {
     id: 43,
     image: "/assets/imgs/grupos-electrogenos/kipor-10a.webp",
-    nombre: "Grupo Electrógeno KGE12E",
+    nombre: "Kipor KGE12E",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "10.5 kva",
@@ -475,7 +486,7 @@ export const gruposElectrogenos = [
   {
     id: 44,
     image: "/assets/imgs/grupos-electrogenos/kipor-10b.webp",
-    nombre: "Grupo Electrógeno KDE12STAF3",
+    nombre: "Kipor KDE12STAF3",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "10.5 kva",
@@ -486,7 +497,7 @@ export const gruposElectrogenos = [
   {
     id: 45,
     image: "/assets/imgs/grupos-electrogenos/kipor-10c.webp",
-    nombre: "Grupo Electrógeno KDE12STAF",
+    nombre: "Kipor KDE12STAF",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "10.5 kva",
@@ -497,7 +508,7 @@ export const gruposElectrogenos = [
   {
     id: 46,
     image: "/assets/imgs/grupos-electrogenos/kipor-10d.webp",
-    nombre: "Grupo Electrógeno KDE12EAF3",
+    nombre: "Kipor KDE12EAF3",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "10.5 kva",
@@ -508,7 +519,7 @@ export const gruposElectrogenos = [
   {
     id: 47,
     image: "/assets/imgs/grupos-electrogenos/kipor-10e.webp",
-    nombre: "Grupo Electrógeno KDE12EAF",
+    nombre: "Kipor KDE12EAF",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "10.5 kva",
@@ -519,7 +530,7 @@ export const gruposElectrogenos = [
   {
     id: 48,
     image: "/assets/imgs/grupos-electrogenos/logus-9.webp",
-    nombre: "Grupo Electrógeno GLD9500ED",
+    nombre: "Logus GLD9500ED",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "9.5 kva",
@@ -530,7 +541,7 @@ export const gruposElectrogenos = [
   {
     id: 49,
     image: "/assets/imgs/grupos-electrogenos/logus-9n.webp",
-    nombre: "Grupo Electrógeno GLE12E3",
+    nombre: "Logus GLE12E3",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "9.5 kva",
@@ -541,7 +552,7 @@ export const gruposElectrogenos = [
   {
     id: 50,
     image: "/assets/imgs/grupos-electrogenos/logus-9n.webp",
-    nombre: "Grupo Electrógeno GLE12E3",
+    nombre: "Logus GLE12E3",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "9.5 kva",
@@ -552,7 +563,7 @@ export const gruposElectrogenos = [
   {
     id: 51,
     image: "/assets/imgs/grupos-electrogenos/logus-9a.webp",
-    nombre: "Grupo Electrógeno GLT9500E",
+    nombre: "Logus GLT9500E",
     marca: "Logus",
     combustible: "Gas",
     potencia: "9.5 kva",
@@ -563,7 +574,7 @@ export const gruposElectrogenos = [
   {
     id: 52,
     image: "/assets/imgs/grupos-electrogenos/logus-9a.webp",
-    nombre: "Grupo Electrógeno GLT9500E",
+    nombre: "Logus GLT9500E",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "9.5 kva",
@@ -574,7 +585,7 @@ export const gruposElectrogenos = [
   {
     id: 53,
     image: "/assets/imgs/grupos-electrogenos/logus-9b.webp",
-    nombre: "Grupo Electrógeno GLD9500ED",
+    nombre: "Logus GLD9500ED",
     marca: "Logus",
     combustible: "Diesel",
     potencia: "9.5 kva",
@@ -585,7 +596,7 @@ export const gruposElectrogenos = [
   {
     id: 54,
     image: "/assets/imgs/grupos-electrogenos/logus-8.webp",
-    nombre: "Grupo Electrógeno GL8500E-G",
+    nombre: "Logus GL8500E-G",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "8.5 kva",
@@ -596,7 +607,7 @@ export const gruposElectrogenos = [
   {
     id: 55,
     image: "/assets/imgs/grupos-electrogenos/logus-8.webp",
-    nombre: "Grupo Electrógeno GL8500E-G",
+    nombre: "Logus GL8500E-G",
     marca: "Logus",
     combustible: "Gas",
     potencia: "8.5 kva",
@@ -607,7 +618,7 @@ export const gruposElectrogenos = [
   {
     id: 56,
     image: "/assets/imgs/grupos-electrogenos/logus-8.webp",
-    nombre: "Grupo Electrógeno GG8500E3 PREMIUM",
+    nombre: "Logus GG8500E3 PREMIUM",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "8.5 kva",
@@ -618,7 +629,7 @@ export const gruposElectrogenos = [
   {
     id: 57,
     image: "/assets/imgs/grupos-electrogenos/logus-8.webp",
-    nombre: "Grupo Electrógeno GL8500E PREMIUM",
+    nombre: "Logus GL8500E PREMIUM",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "8.5 kva",
@@ -629,7 +640,7 @@ export const gruposElectrogenos = [
   {
     id: 58,
     image: "/assets/imgs/grupos-electrogenos/pramac-8.webp",
-    nombre: "Grupo Electrógeno GA8000",
+    nombre: "Pramac GA8000",
     marca: "Pramac",
     combustible: "Gas",
     potencia: "8 kva",
@@ -640,7 +651,7 @@ export const gruposElectrogenos = [
   {
     id: 59,
     image: "/assets/imgs/grupos-electrogenos/logus-7.webp",
-    nombre: "Grupo Electrógeno GL7500E ATS C/TTA",
+    nombre: "Logus GL7500E ATS C/TTA",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "7.5 kva",
@@ -651,7 +662,7 @@ export const gruposElectrogenos = [
   {
     id: 60,
     image: "/assets/imgs/grupos-electrogenos/logus-6.webp",
-    nombre: "Grupo Electrógeno GL6500E PREMIUM",
+    nombre: "Logus GL6500E PREMIUM",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "6.5 kva",
@@ -662,7 +673,7 @@ export const gruposElectrogenos = [
   {
     id: 61,
     image: "/assets/imgs/grupos-electrogenos/logus-6.webp",
-    nombre: "Grupo Electrógeno GL6500E-G",
+    nombre: "Logus GL6500E-G",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "6.5 kva",
@@ -673,7 +684,7 @@ export const gruposElectrogenos = [
   {
     id: 62,
     image: "/assets/imgs/grupos-electrogenos/logus-6.webp",
-    nombre: "Grupo Electrógeno GL6500E-G",
+    nombre: "Logus GL6500E-G",
     marca: "Logus",
     combustible: "Gas",
     potencia: "6.5 kva",
@@ -684,7 +695,7 @@ export const gruposElectrogenos = [
   {
     id: 63,
     image: "/assets/imgs/grupos-electrogenos/kipor-6.webp",
-    nombre: "Grupo Electrógeno KDE6500T3",
+    nombre: "Kipor KDE6500T3",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "6 kva",
@@ -695,7 +706,7 @@ export const gruposElectrogenos = [
   {
     id: 64,
     image: "/assets/imgs/grupos-electrogenos/kipor-6.webp",
-    nombre: "Grupo Electrógeno KDE6500T",
+    nombre: "Kipor KDE6500T",
     marca: "Kipor",
     combustible: "Diesel",
     potencia: "6 kva",
@@ -706,7 +717,7 @@ export const gruposElectrogenos = [
   {
     id: 65,
     image: "/assets/imgs/grupos-electrogenos/logus-5.webp",
-    nombre: "Grupo Electrógeno GL5500E PREMIUM",
+    nombre: "Logus GL5500E PREMIUM",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "5.5 kva",
@@ -717,7 +728,7 @@ export const gruposElectrogenos = [
   {
     id: 66,
     image: "/assets/imgs/grupos-electrogenos/logus-5a.webp",
-    nombre: "Grupo Electrógeno GL5500E ATS C/TTA",
+    nombre: "Logus GL5500E ATS C/TTA",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "5.5 kva",
@@ -728,7 +739,7 @@ export const gruposElectrogenos = [
   {
     id: 67,
     image: "/assets/imgs/grupos-electrogenos/logus-5b.webp",
-    nombre: "Grupo Electrógeno INVERTER GI5500",
+    nombre: "Logus INVERTER GI5500",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "5.5 kva",
@@ -739,7 +750,7 @@ export const gruposElectrogenos = [
   {
     id: 68,
     image: "/assets/imgs/grupos-electrogenos/logus-5b.webp",
-    nombre: "Grupo Electrógeno INVERTER GI4500",
+    nombre: "Logus INVERTER GI4500",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "4.5 kva",
@@ -750,7 +761,7 @@ export const gruposElectrogenos = [
   {
     id: 69,
     image: "/assets/imgs/grupos-electrogenos/logus-3.webp",
-    nombre: "Grupo Electrógeno GE3300 E PREMIUM",
+    nombre: "Logus GE3300 E PREMIUM",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "3 kva",
@@ -761,7 +772,7 @@ export const gruposElectrogenos = [
   {
     id: 70,
     image: "/assets/imgs/grupos-electrogenos/logus-3.webp",
-    nombre: "Grupo Electrógeno GL3300 AM",
+    nombre: "Logus GL3300 AM",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "3 kva",
@@ -772,7 +783,7 @@ export const gruposElectrogenos = [
   {
     id: 71,
     image: "/assets/imgs/grupos-electrogenos/logus-2.webp",
-    nombre: "Grupo Electrógeno INVERTER GI2000",
+    nombre: "Logus INVERTER GI2000",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "2 kva",
@@ -783,7 +794,7 @@ export const gruposElectrogenos = [
   {
     id: 72,
     image: "/assets/imgs/grupos-electrogenos/logus-1.webp",
-    nombre: "Grupo Electrógeno INVERTER GI1000",
+    nombre: "Logus INVERTER GI1000",
     marca: "Logus",
     combustible: "Nafta",
     potencia: "0.9 kva",
