@@ -5,13 +5,18 @@ import { gruposElectrogenos } from "../../data/gruposElectrogenos";
 import {
   ButtonCart,
   ButtonInDec,
+  ButtonInDecContainer,
+  CarritoContainer,
   ContainerHUno,
   GlobalContainer,
   ImgContainer,
+  PremStandContainer,
   SliderContainer,
   SliderHeroContainer,
+  TextContainer,
 } from "./detalles-grupos-styles";
 import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 export const DetallesGrupos = () => {
   const { id } = useParams();
@@ -39,13 +44,6 @@ export const DetallesGrupos = () => {
       </ContainerHUno>
       {/* GALERÍA */}
       <SliderHeroContainer>
-        <ImgContainer>
-          <img
-            src={mainImage}
-            alt={grupo.nombre}
-            style={{ width: "80%", height: "100%" }}
-          />
-        </ImgContainer>
         <SliderContainer>
           {galleryImages.map((img, idx) => (
             <img
@@ -65,6 +63,55 @@ export const DetallesGrupos = () => {
             />
           ))}
         </SliderContainer>
+        <ImgContainer>
+          <img
+            src={mainImage}
+            alt={grupo.nombre}
+            style={{ width: "80%", height: "100%" }}
+          />
+        </ImgContainer>
+        <TextContainer>
+          <SpecSimple
+            label={`Precio Premium: $${grupo.precioPremium}`}
+            value={[
+              `Extensión de garantía técnica a un total de 12 meses.`,
+              `Reforzado de fábrica o se refuerza en el primer service.`,
+              `Pre entrega de puesta en marcha y ensayo de esfuerzo.`,
+              `Servicio técnico durante la vida útil de su equipo, acceso al 0810 las 24 hs, visitas técnicas.`,
+              `Asesoramiento permanente, servicio de post venta full, provisión de repuestos express y más.`,
+            ]}
+          />
+          <SpecSimple
+            label={`Precio Standard: $${grupo.precioStandard}`}
+            value={[`Garantía de fábrica de 6 meses.`, `Venta a caja cerrada.`]}
+          />
+          {/* PANEL DE COMPRA */}
+          <CarritoContainer>
+            <ButtonInDecContainer>
+              <ButtonInDec onClick={decrease}>
+                <CiCircleMinus />
+              </ButtonInDec>
+              <input
+                type="text"
+                value={cantidad}
+                readOnly
+                style={{
+                  width: "55px",
+                  height: "40px",
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  border: "1px solid #ccc",
+                  borderRadius: "4px",
+                }}
+              />
+              <ButtonInDec onClick={increase}>
+                <CiCirclePlus />
+              </ButtonInDec>
+            </ButtonInDecContainer>
+
+            <ButtonCart onClick={handleAgregar}>Agregar al carrito</ButtonCart>
+          </CarritoContainer>
+        </TextContainer>
       </SliderHeroContainer>
       {/* DESTACADO */}
       <div
@@ -82,11 +129,6 @@ export const DetallesGrupos = () => {
         <SpecSimple label="Potencia" value={grupo.potencia} />
         <SpecSimple label="Fase" value={grupo.fase} />
         <SpecSimple label="Combustible" value={grupo.combustible} />
-        <SpecSimple label="Precio Premium" value={`$${grupo.precioPremium}`} />
-        <SpecSimple
-          label="Precio Standard"
-          value={`$${grupo.precioStandard}`}
-        />
       </div>
 
       {/* DETALLES */}
@@ -123,63 +165,25 @@ export const DetallesGrupos = () => {
             </tbody>
           </table>
         </div>
-
-        {/* PANEL DE COMPRA */}
-        <div
-          style={{
-            border: "1px solid #eee",
-            borderRadius: "12px",
-            padding: "1.5rem",
-            position: "sticky",
-            top: "1rem",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
-            background: "#fdfdfd",
-          }}
-        >
-          <h2 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
-            Desde ${grupo.precioStandard}
-          </h2>
-
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "1rem",
-              marginBottom: "1rem",
-            }}
-          >
-            <ButtonInDec onClick={decrease}>
-              <CiCircleMinus />
-            </ButtonInDec>
-            <input
-              type="text"
-              value={cantidad}
-              readOnly
-              style={{
-                width: "55px",
-                height: "40px",
-                textAlign: "center",
-                fontWeight: "bold",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-              }}
-            />
-            <ButtonInDec onClick={increase}>
-              <CiCirclePlus />
-            </ButtonInDec>
-          </div>
-
-          <ButtonCart onClick={handleAgregar}>Agregar al carrito</ButtonCart>
-        </div>
       </div>
     </GlobalContainer>
   );
 };
 
 // Mini spec destacada
-const SpecSimple = ({ label, value }) => (
-  <div>
-    <p style={{ margin: 0, fontSize: "0.9rem", color: "#666" }}>{label}</p>
-    <p style={{ margin: 0, fontWeight: "bold", fontSize: "1.2rem" }}>{value}</p>
-  </div>
-);
+const SpecSimple = ({ label, value }) => {
+  const valores = Array.isArray(value) ? value : [value];
+  return (
+    <PremStandContainer>
+      <p style={{ margin: 0, fontWeight: "bold", fontSize: "1.2rem" }}>
+        {label}
+      </p>
+      {valores.map((b, index) => (
+        <p style={{ margin: 0, fontSize: "1rem", color: "#666" }} key={index}>
+          <FaRegArrowAltCircleRight />
+          {b}
+        </p>
+      ))}
+    </PremStandContainer>
+  );
+};
