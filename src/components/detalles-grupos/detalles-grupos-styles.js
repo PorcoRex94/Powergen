@@ -11,11 +11,11 @@ export const GlobalContainer = styled.div`
 
 export const ContainerHUno = styled.div`
   padding: 1.2rem;
+  padding-bottom: 3.5rem;
 `;
 
 export const SliderHeroContainer = styled.div`
   display: flex;
-  align-items: flex-start;
   gap: 1rem;
   margin-bottom: 1rem;
   width: 100%;
@@ -33,6 +33,7 @@ export const ImgContainer = styled.div`
   border-radius: 16px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   width: 41%;
+  height: 430px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,16 +41,38 @@ export const ImgContainer = styled.div`
 
 export const TextContainer = styled.div`
   width: 46%;
-  padding: 1rem;
+  padding: 0 0.5rem 0 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
+
+  .input__container {
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.5rem;
+  }
 `;
 
 export const PremStandContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
+`;
+
+export const DetalleContainer = styled.div`
+  width: 85%;
+  padding: 1rem;
+
+  h2 {
+    text-align: center;
+    padding-bottom: 2.5rem;
+  }
+`;
+
+export const EspecifcTextContainer = styled.div`
+  display: flex;
+  gap: 25px;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid gray;
 `;
 
 export const CarritoContainer = styled.div`

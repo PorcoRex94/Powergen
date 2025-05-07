@@ -8,6 +8,8 @@ import {
   ButtonInDecContainer,
   CarritoContainer,
   ContainerHUno,
+  DetalleContainer,
+  EspecifcTextContainer,
   GlobalContainer,
   ImgContainer,
   PremStandContainer,
@@ -24,6 +26,7 @@ export const DetallesGrupos = () => {
   const addToCart = useCartStore((state) => state.addToCart);
   const [cantidad, setCantidad] = useState(1);
   const [mainImage, setMainImage] = useState(grupo?.image);
+  const [productType, setProductType] = useState("standard");
 
   if (!grupo) return <h1>Producto no encontrado</h1>;
 
@@ -35,6 +38,11 @@ export const DetallesGrupos = () => {
   const decrease = () => setCantidad((prev) => (prev > 1 ? prev - 1 : 1));
 
   const galleryImages = grupo.images || [grupo.image];
+
+  const handleProductTypeChange = (e) => {
+    const selectedType = e.target.value;
+    setProductType(selectedType);
+  };
 
   return (
     <GlobalContainer>
@@ -71,101 +79,119 @@ export const DetallesGrupos = () => {
           />
         </ImgContainer>
         <TextContainer>
-          <SpecSimple
-            label={`Precio Premium: $${grupo.precioPremium}`}
-            value={[
-              `Extensión de garantía técnica a un total de 12 meses.`,
-              `Reforzado de fábrica o se refuerza en el primer service.`,
-              `Pre entrega de puesta en marcha y ensayo de esfuerzo.`,
-              `Servicio técnico durante la vida útil de su equipo, acceso al 0810 las 24 hs, visitas técnicas.`,
-              `Asesoramiento permanente, servicio de post venta full, provisión de repuestos express y más.`,
-            ]}
-          />
-          <SpecSimple
-            label={`Precio Standard: $${grupo.precioStandard}`}
-            value={[`Garantía de fábrica de 6 meses.`, `Venta a caja cerrada.`]}
-          />
-          {/* PANEL DE COMPRA */}
-          <CarritoContainer>
-            <ButtonInDecContainer>
-              <ButtonInDec onClick={decrease}>
-                <CiCircleMinus />
-              </ButtonInDec>
-              <input
-                type="text"
-                value={cantidad}
-                readOnly
-                style={{
-                  width: "55px",
-                  height: "40px",
-                  textAlign: "center",
-                  fontWeight: "bold",
-                  border: "1px solid #ccc",
-                  borderRadius: "4px",
-                }}
-              />
-              <ButtonInDec onClick={increase}>
-                <CiCirclePlus />
-              </ButtonInDec>
-            </ButtonInDecContainer>
-
-            <ButtonCart onClick={handleAgregar}>Agregar al carrito</ButtonCart>
-          </CarritoContainer>
+          <div className="input__container">
+            <input
+              type="radio"
+              id="standard"
+              name="productType"
+              value="premium"
+              checked={productType === "premium"}
+              onChange={handleProductTypeChange}
+            />
+            <label
+              htmlFor="standard"
+              style={{
+                marginLeft: "0.5rem",
+                fontWeight: "bold",
+                fontSize: "1.2rem",
+              }}
+            >
+              Opción Premium (Recomendada)
+            </label>
+            <SpecSimple
+              label={`Precio Premium: $${grupo.precioPremium}`}
+              value={[
+                `Extensión de garantía técnica a un total de 12 meses.`,
+                `Reforzado de fábrica o se refuerza en el primer service.`,
+                `Pre entrega de puesta en marcha y ensayo de esfuerzo.`,
+                `Servicio técnico durante la vida útil de su equipo, acceso al 0810 las 24 hs, visitas técnicas.`,
+                `Asesoramiento permanente, servicio de post venta full, provisión de repuestos express y más.`,
+              ]}
+            />
+          </div>
+          <div className="input__container">
+            <input
+              type="radio"
+              id="premium"
+              name="productType"
+              value="standard"
+              checked={productType === "standard"}
+              onChange={handleProductTypeChange}
+            />
+            <label
+              htmlFor="premium"
+              style={{
+                marginLeft: "0.5rem",
+                fontWeight: "bold",
+                fontSize: "1.2rem",
+              }}
+            >
+              Opción Standard
+            </label>
+            <SpecSimple
+              label={`Precio Standard: $${grupo.precioStandard}`}
+              value={[
+                `Garantía de fábrica de 6 meses.`,
+                `Venta a caja cerrada.`,
+              ]}
+            />
+          </div>
         </TextContainer>
+        {/* PANEL DE COMPRA */}
       </SliderHeroContainer>
-      {/* DESTACADO */}
-      <div
-        style={{
-          background: "#f0f4ff",
-          padding: "1.5rem",
-          borderRadius: "12px",
-          marginBottom: "2rem",
-          display: "flex",
-          gap: "2rem",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-        }}
-      >
-        <SpecSimple label="Potencia" value={grupo.potencia} />
-        <SpecSimple label="Fase" value={grupo.fase} />
-        <SpecSimple label="Combustible" value={grupo.combustible} />
-      </div>
-
-      {/* DETALLES */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "2fr 1fr",
-          gap: "2rem",
-          alignItems: "start",
-        }}
-      >
-        {/* FICHA TÉCNICA */}
-        <div>
-          <h2 style={{ marginBottom: "1rem" }}>Especificaciones Técnicas</h2>
-          <table style={{ width: "100%", borderCollapse: "collapse" }}>
-            <tbody>
-              {grupo.specs &&
-                grupo.specs.map((spec, index) => (
-                  <tr key={index} style={{ borderBottom: "1px solid #eee" }}>
-                    <td
+      {/* FICHA TÉCNICA */}
+      <DetalleContainer>
+        <h2 style={{ marginBottom: "1rem" }}>Ficha Técnica</h2>
+        <div style={{ display: "flex", gap: "2rem" }}>
+          {[0, 1].map((col) => (
+            <div key={col} style={{ flex: 1 }}>
+              {grupo.specs
+                .slice(col === 0 ? 0 : 7, col === 0 ? 7 : grupo.specs.length)
+                .map((spec, index) => (
+                  <EspecifcTextContainer key={index}>
+                    <div
                       style={{
-                        padding: "0.75rem",
                         fontWeight: "bold",
                         color: "#333",
+                        width: "40%",
                       }}
                     >
-                      {spec.label}
-                    </td>
-                    <td style={{ padding: "0.75rem", color: "#555" }}>
+                      {spec.label}:
+                    </div>
+                    <div style={{ color: "#555", width: "60%" }}>
                       {spec.value}
-                    </td>
-                  </tr>
+                    </div>
+                  </EspecifcTextContainer>
                 ))}
-            </tbody>
-          </table>
+            </div>
+          ))}
         </div>
-      </div>
+      </DetalleContainer>
+      <CarritoContainer>
+        <ButtonInDecContainer>
+          <ButtonInDec onClick={decrease}>
+            <CiCircleMinus />
+          </ButtonInDec>
+          <input
+            type="text"
+            value={cantidad}
+            readOnly
+            style={{
+              width: "55px",
+              height: "40px",
+              textAlign: "center",
+              fontWeight: "bold",
+              border: "1px solid #ccc",
+              borderRadius: "4px",
+            }}
+          />
+          <ButtonInDec onClick={increase}>
+            <CiCirclePlus />
+          </ButtonInDec>
+        </ButtonInDecContainer>
+
+        <ButtonCart onClick={handleAgregar}>Agregar al carrito</ButtonCart>
+      </CarritoContainer>
     </GlobalContainer>
   );
 };
@@ -175,15 +201,29 @@ const SpecSimple = ({ label, value }) => {
   const valores = Array.isArray(value) ? value : [value];
   return (
     <PremStandContainer>
-      <p style={{ margin: 0, fontWeight: "bold", fontSize: "1.2rem" }}>
-        {label}
-      </p>
       {valores.map((b, index) => (
-        <p style={{ margin: 0, fontSize: "1rem", color: "#666" }} key={index}>
-          <FaRegArrowAltCircleRight />
+        <p
+          style={{
+            margin: 0,
+            fontSize: "1rem",
+            color: "#666",
+          }}
+          key={index}
+        >
+          <FaRegArrowAltCircleRight
+            style={{
+              paddingRight: "0.2rem",
+              fontSize: "1.5rem",
+              position: "relative",
+              top: "5px",
+            }}
+          />
           {b}
         </p>
       ))}
+      <p style={{ margin: 0, fontWeight: "bold", fontSize: "1.2rem" }}>
+        {label}
+      </p>
     </PremStandContainer>
   );
 };

@@ -1,58 +1,81 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
-// Contenedor principal que oculta el desbordamiento
 const SliderContainer = styled.div`
   overflow: hidden;
-  white-space: nowrap;
-  position: relative;
   width: 100%;
+  position: relative;
 `;
 
-// Wrapper con animación suave sin cortes
-const LogosWrapper = styled.div`
+const LogosTrack = styled.div`
+  display: flex;
+  will-change: transform;
+`;
+
+const LogoGroup = styled.div`
   display: flex;
   gap: 50px;
-  animation: scroll 35s linear infinite;
-  width: max-content;
-
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-25%);
-    } /* Se mueve un ciclo completo */
-  }
-
-  &:hover {
-    animation-play-state: paused; /* Pausa al pasar el mouse */
-  }
 `;
 
-// Estilos de los logos
 const Logo = styled.img`
   width: 200px;
   height: 150px;
-  display: flex;
   flex-shrink: 0;
-
-  @media (max-width: 360px) {
-    width: 200px;
-  }
 `;
 
 export const LogoSlider = ({ logos }) => {
-  // Duplicamos los logos para crear el loop infinito sin saltos
-  const duplicatedLogos = [...logos, ...logos];
+  const trackRef = useRef(null);
+  const groupRef = useRef(null);
+  const [isHovering, setIsHovering] = useState(false);
+  const speed = useRef(1); // px/frame
+  const position = useRef(0);
+  const loopLength = useRef(0);
+
+  useEffect(() => {
+    if (!groupRef.current) return;
+
+    loopLength.current = groupRef.current.offsetWidth;
+
+    const animate = () => {
+      position.current -= speed.current;
+
+      if (Math.abs(position.current) >= loopLength.current) {
+        position.current = 0;
+      }
+
+      if (trackRef.current) {
+        trackRef.current.style.transform = `translateX(${position.current}px)`;
+      }
+
+      requestAnimationFrame(animate);
+    };
+
+    animate();
+  }, [logos]);
+
+  useEffect(() => {
+    speed.current = isHovering ? 0.2 : 1.8;
+  }, [isHovering]);
 
   return (
-    <SliderContainer>
-      <LogosWrapper>
-        {duplicatedLogos.map((logo, index) => (
-          <Logo key={index} src={logo} alt={`Logo ${index + 1}`} />
-        ))}
-      </LogosWrapper>
+    <SliderContainer
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      <LogosTrack ref={trackRef}>
+        {/* Grupo original */}
+        <LogoGroup ref={groupRef}>
+          {logos.map((logo, i) => (
+            <Logo key={`original-${i}`} src={logo} alt={`Logo ${i + 1}`} />
+          ))}
+        </LogoGroup>
+        {/* Duplicado para el loop */}
+        <LogoGroup>
+          {logos.map((logo, i) => (
+            <Logo key={`copy-${i}`} src={logo} alt={`Logo ${i + 1}`} />
+          ))}
+        </LogoGroup>
+      </LogosTrack>
     </SliderContainer>
   );
 };
