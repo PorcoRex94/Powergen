@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const GlobalContactContainer = styled.section`
   width: calc(100vw - var(--scrollbar-width));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h2 {
     width: 100%;
     text-align: center;
@@ -94,4 +98,48 @@ export const ContainerInput = styled.div`
 
 export const ContactContainerRight = styled.div`
   width: 50%;
+`;
+
+export const ContactContainerBottom = styled.div`
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 1rem;
+`;
+
+export const LocalizationContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+`;
+
+export const LocalizationTextTop = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+export const LocalizationTextTopContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  .icon__map {
+    font-size: 1.2rem;
+    position: relative;
+    top: 3px;
+  }
+`;
+
+export const LocalizationTextBottom = styled.div`
+  text-align: center;
+
+  .icon__map {
+    font-size: 1.2rem;
+    position: relative;
+    top: 3px;
+  }
 `;

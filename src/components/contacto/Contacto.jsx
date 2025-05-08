@@ -1,14 +1,20 @@
 import { WhatsAppButton } from "../btn-whatsapp/WhatsAppButton";
 import {
   ContactContainer,
+  ContactContainerBottom,
   ContactContainerLeft,
   ContactContainerRight,
   ContainerInput,
   FirstContainerContact,
   GlobalContactContainer,
+  LocalizationContainer,
+  LocalizationTextBottom,
+  LocalizationTextTop,
+  LocalizationTextTopContainer,
   SecondContainerContact,
   ThirdContainerContact,
 } from "./contacto-styles";
+import { PiMapPinFill } from "react-icons/pi";
 
 export const Contacto = () => {
   return (
@@ -82,6 +88,50 @@ export const Contacto = () => {
           />
         </ContactContainerRight>
       </ContactContainer>
+      <ContactContainerBottom>
+        <h3>Nuestas Oficinas</h3>
+        <LocalizationContainer>
+          <LocalizationTextTop>
+            <LocalizationTextTopContainer>
+              <p>Oficina central y taller de máquinas menores</p>
+              <a href="">
+                <PiMapPinFill className="icon__map" />
+                Carlos F. Melo 3580, Florida Oeste
+              </a>
+            </LocalizationTextTopContainer>
+            <LocalizationTextTopContainer>
+              <p>Distribuidora mayorista - repuestos - insumos</p>
+              <a href="">
+                <PiMapPinFill className="icon__map" />
+                Roca 2140, Florida
+              </a>
+            </LocalizationTextTopContainer>
+          </LocalizationTextTop>
+          <LocalizationTextTop>
+            <LocalizationTextTopContainer>
+              <p>Fabricación y ensamblado de grupos electrógenos</p>
+              <a href="">
+                <PiMapPinFill className="icon__map" />
+                Catamarca 3580, La Lucila
+              </a>
+            </LocalizationTextTopContainer>
+            <LocalizationTextTopContainer>
+              <p>Importadora</p>
+              <a href="">
+                <PiMapPinFill className="icon__map" />
+                Reconquista 574. PB A, CABA
+              </a>
+            </LocalizationTextTopContainer>
+          </LocalizationTextTop>
+        </LocalizationContainer>
+        <LocalizationTextBottom>
+          <p>Alquiler y equipos mayores</p>
+          <a href="">
+            <PiMapPinFill className="icon__map" />
+            Parque empresarial, Salvador Debenedetti 3895, Olivos
+          </a>
+        </LocalizationTextBottom>
+      </ContactContainerBottom>
     </GlobalContactContainer>
   );
 };
