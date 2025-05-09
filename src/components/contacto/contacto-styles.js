@@ -120,13 +120,17 @@ export const LocalizationContainer = styled.div`
 export const LocalizationTextTop = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
+  width: 50%;
 `;
 
 export const LocalizationTextTopContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 7px;
+  width: 85%;
   .icon__map {
     font-size: 1.2rem;
     position: relative;

@@ -89,34 +89,40 @@ export const Contacto = () => {
         </ContactContainerRight>
       </ContactContainer>
       <ContactContainerBottom>
-        <h3>Nuestas Oficinas</h3>
+        <h3>Nuestas Divisiones</h3>
         <LocalizationContainer>
           <LocalizationTextTop>
             <LocalizationTextTopContainer>
-              <p>Oficina central y taller de máquinas menores</p>
+              <p>
+                Oficina central y servicio técnico equipos semi-industriales,
+                comercios, hogar.
+              </p>
               <a href="">
                 <PiMapPinFill className="icon__map" />
                 Carlos F. Melo 3580, Florida Oeste
               </a>
             </LocalizationTextTopContainer>
             <LocalizationTextTopContainer>
-              <p>Distribuidora mayorista - repuestos - insumos</p>
+              <p>Ensamblado de equipos y cabinas.</p>
               <a href="">
                 <PiMapPinFill className="icon__map" />
-                Roca 2140, Florida
+                Catamarca 3554, San Martín
               </a>
             </LocalizationTextTopContainer>
           </LocalizationTextTop>
           <LocalizationTextTop>
             <LocalizationTextTopContainer>
-              <p>Fabricación y ensamblado de grupos electrógenos</p>
+              <p>
+                Distribución mayorista de grupos electrogenos, venta de
+                repuestos e insumos.
+              </p>
               <a href="">
                 <PiMapPinFill className="icon__map" />
-                Catamarca 3580, La Lucila
+                Roca 2140, Florida
               </a>
             </LocalizationTextTopContainer>
             <LocalizationTextTopContainer>
-              <p>Importadora</p>
+              <p>Oficina de importación.</p>
               <a href="">
                 <PiMapPinFill className="icon__map" />
                 Reconquista 574. PB A, CABA
@@ -125,7 +131,7 @@ export const Contacto = () => {
           </LocalizationTextTop>
         </LocalizationContainer>
         <LocalizationTextBottom>
-          <p>Alquiler y equipos mayores</p>
+          <p>Alquiler y Servicio técnico de equipos industriales</p>
           <a href="">
             <PiMapPinFill className="icon__map" />
             Parque empresarial, Salvador Debenedetti 3895, Olivos
