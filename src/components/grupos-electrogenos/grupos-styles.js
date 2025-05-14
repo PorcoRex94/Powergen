@@ -33,7 +33,7 @@ export const SectionGridContainer = styled.section`
 export const ContainerContent = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  height: 700px;
   gap: 15px;
   padding: 1.5rem;
 
