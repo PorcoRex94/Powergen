@@ -51,7 +51,7 @@ export const GruposElectrogenos = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dicta in officiis perferendis aliquid
                   </p>
-                  <Link to="/grupos" className="btn__service">
+                  <Link to="/ventas" className="btn__service">
                     Ver más...
                   </Link>
                 </div>
@@ -70,7 +70,7 @@ export const GruposElectrogenos = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dicta in officiis perferendis aliquid
                   </p>
-                  <Link to={"/energias"} className="btn__service">
+                  <Link to={"/alquiler"} className="btn__service">
                     Ver más...
                   </Link>
                 </div>
@@ -89,7 +89,7 @@ export const GruposElectrogenos = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dicta in officiis perferendis aliquid
                   </p>
-                  <Link to={"/energias"} className="btn__service">
+                  <Link to={"/servicio-tecnico"} className="btn__service">
                     Ver más...
                   </Link>
                 </div>
