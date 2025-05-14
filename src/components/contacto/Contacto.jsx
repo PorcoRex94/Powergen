@@ -131,7 +131,7 @@ export const Contacto = () => {
           </LocalizationTextTop>
         </LocalizationContainer>
         <LocalizationTextBottom>
-          <p>Alquiler y Servicio técnico de equipos industriales</p>
+          <p>Alquiler y Servicio técnico de equipos industriales.</p>
           <a href="">
             <PiMapPinFill className="icon__map" />
             Parque empresarial, Salvador Debenedetti 3895, Olivos
