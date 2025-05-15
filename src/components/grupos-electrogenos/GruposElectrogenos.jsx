@@ -45,11 +45,11 @@ export const GruposElectrogenos = () => {
                 className="img__servicios"
               />
               <div className="content__text">
-                <h3>VENTA</h3>
+                <h3>Venta</h3>
                 <div className="btn__gap">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta in officiis perferendis aliquid
+                    Grupos Electrógenos Powergen: Energía confiable a tu
+                    alcance.
                   </p>
                   <Link to="/ventas" className="btn__service">
                     Ver más...
@@ -64,11 +64,11 @@ export const GruposElectrogenos = () => {
                 className="img__servicios"
               />
               <div className="content__text">
-                <h3>ALQUILER</h3>
+                <h3>Alquiler</h3>
                 <div className="btn__gap">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta in officiis perferendis aliquid
+                    Generadores eléctricos para hogar, eventos, industria y
+                    más...
                   </p>
                   <Link to={"/alquiler"} className="btn__service">
                     Ver más...
@@ -83,11 +83,10 @@ export const GruposElectrogenos = () => {
                 className="img__servicios"
               />
               <div className="content__text">
-                <h3>SERVICIO TÉCNICO</h3>
+                <h3>Servicio Técnico</h3>
                 <div className="btn__gap">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta in officiis perferendis aliquid
+                    Mantenimiento y reparación garantizada para tus equipos.
                   </p>
                   <Link to={"/servicio-tecnico"} className="btn__service">
                     Ver más...
