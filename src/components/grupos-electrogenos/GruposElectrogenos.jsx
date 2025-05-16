@@ -40,7 +40,7 @@ export const GruposElectrogenos = () => {
           <ContainerContent>
             <div className="card">
               <img
-                src="/assets/imgs/img/hero-index-dos.jpg"
+                src="/assets/imgs/img/eq_grandes.webp"
                 alt="foto ventas"
                 className="img__servicios"
               />
@@ -59,7 +59,7 @@ export const GruposElectrogenos = () => {
             </div>
             <div className="card">
               <img
-                src="/assets/imgs/img/hero-index-dos.jpg"
+                src="/assets/imgs/img/puente_de_la_mujer.webp"
                 alt="foto alquiler"
                 className="img__servicios"
               />
@@ -78,7 +78,7 @@ export const GruposElectrogenos = () => {
             </div>
             <div className="card">
               <img
-                src="/assets/imgs/img/hero-index-dos.jpg"
+                src="/assets/imgs/img/st_grupo_grande.webp"
                 alt="foto alquiler"
                 className="img__servicios"
               />

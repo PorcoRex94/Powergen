@@ -58,7 +58,7 @@ export const ContactContainerLeft = styled.div`
 
   textarea {
     width: 100%;
-    height: 200px;
+    height: 115px;
     outline: none;
     border-top: none;
     border-left: none;
