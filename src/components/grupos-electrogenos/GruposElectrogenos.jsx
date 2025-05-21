@@ -59,7 +59,7 @@ export const GruposElectrogenos = () => {
             </div>
             <div className="card">
               <img
-                src="/assets/imgs/img/puente_de_la_mujer.webp"
+                src="/assets/imgs/img/foto_alquiler.webp"
                 alt="foto alquiler"
                 className="img__servicios"
               />

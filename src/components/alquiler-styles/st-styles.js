@@ -13,6 +13,7 @@ export const GlobalSectionTextContainer = styled.section`
   justify-content: center;
   background-color: var(--negro);
 `;
+
 export const SectionTextContainer = styled.div`
   width: 85%;
   padding: 1rem;
@@ -27,14 +28,21 @@ export const SectionTextContainer = styled.div`
     font-size: 1.2rem;
   }
 `;
+
 export const SectionTextTopContainer = styled.div`
   display: flex;
   gap: 50px;
   padding: 1rem;
 `;
+
 export const SectionTextBottomContainer = styled.div`
   padding: 1rem;
 `;
+
+export const SectionTextBottomBotContainer = styled.div`
+  padding: 1rem;
+`;
+
 export const TextTopContainer = styled.div`
   color: white;
   padding: 1.5rem;
@@ -42,4 +50,10 @@ export const TextTopContainer = styled.div`
   box-shadow: 5px -5px 5px var(--naranja), 5px 5px 5px var(--naranja),
     -5px 0px 5px var(--naranja), -5px 5px 5px var(--naranja),
     -5px -5px 5px var(--naranja);
+`;
+
+export const TextTop = styled.div`
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
 `;

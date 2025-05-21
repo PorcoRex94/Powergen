@@ -10,7 +10,7 @@ import {
 
 export const Nosotros = () => {
   return (
-    <GlobalContainer>
+    <GlobalContainer id="nosotros">
       <h2>Sobre Nosotros</h2>
       <InfoContainer>
         <p className="empresa">

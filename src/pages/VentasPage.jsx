@@ -3,6 +3,7 @@ import { gruposElectrogenos } from "../data/gruposElectrogenos";
 import { ProductList } from "../components/product-list/ProductList";
 import { useProductFilters } from "../hooks/useProductFilters";
 import { ProductFilters } from "../components/product-filters/ProductFilters";
+import { Hero } from "../components/hero/Hero";
 
 const Container = styled.div`
   display: flex;
@@ -40,15 +41,21 @@ export const VentasPage = () => {
   };
 
   return (
-    <Container>
-      <ProductFilters
-        brands={brands}
-        onSearch={setSearch}
-        onBrandChange={setBrand}
-        onCombustionChange={handleCombustionChange}
-        onPhaseChange={handlePhaseChange}
+    <main>
+      <Hero
+        title={"Venta de Grupos Electrógenos"}
+        backgroundImage={"/assets/imgs/img/foto_portada_venta.webp"}
       />
-      <ProductList gruposElectrogenos={filtered} />
-    </Container>
+      <Container>
+        <ProductFilters
+          brands={brands}
+          onSearch={setSearch}
+          onBrandChange={setBrand}
+          onCombustionChange={handleCombustionChange}
+          onPhaseChange={handlePhaseChange}
+        />
+        <ProductList gruposElectrogenos={filtered} />
+      </Container>
+    </main>
   );
 };

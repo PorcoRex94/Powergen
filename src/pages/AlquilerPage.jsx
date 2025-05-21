@@ -13,10 +13,9 @@ export const AlquilerPage = () => {
       <main>
         <Hero
           title={"Alquiler de Grupos Electrógenos"}
-          backgroundImage={"/assets/imgs/img/hero-index-dos.jpg"}
+          backgroundImage={"/assets/imgs/img/foto_portada_alquiler.webp"}
         />
         <GlobalSectionTextContainer>
-          <h2>Alquileres</h2>
           <SectionTextContainer>
             <SectionTextTopContainer>
               <TextTopContainer>

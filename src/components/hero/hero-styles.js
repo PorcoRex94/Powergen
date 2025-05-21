@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeroContainer = styled.section`
   position: relative;
   width: calc(100vw - var(--scrollbar-width));
-  height: 90vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@ export const HeroContainer = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
   }
 
@@ -42,7 +42,7 @@ export const HeroContainer = styled.section`
   .hache__uno {
     font-size: 3rem;
     padding: 1.5rem;
-    color: white;
+    color: var(--naranja);
   }
 
   @media (max-width: 960px) {

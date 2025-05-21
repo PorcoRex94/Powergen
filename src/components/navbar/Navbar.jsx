@@ -129,7 +129,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/nosotros"
+                to="/#nosotros"
                 className="nav__link"
                 onClick={() => {
                   toggleMenu();
@@ -178,7 +178,7 @@ export const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="/servTecnico"
+                    to="/servicio-tecnico"
                     className="dropdown__link"
                     onClick={() => {
                       setActiveDropdown(null);

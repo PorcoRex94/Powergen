@@ -9,6 +9,7 @@ import { Cart } from "./components/cart/Cart";
 import { CartDrawer } from "./components/cart-drawer/CartDrawer";
 import { Checkout } from "./components/checkout/Checkout";
 import { AlquilerPage } from "./pages/AlquilerPage";
+import { ServTecPage } from "./pages/ServTecPage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/energias" element={<EnergiasAlternativas />} />
           <Route path="/ventas" element={<VentasPage />} />
           <Route path="/alquiler" element={<AlquilerPage />} />
+          <Route path="/servicio-tecnico" element={<ServTecPage />} />
           <Route path="/equipos/:slug/:id" element={<DetallesGrupos />} />
         </Route>
       </Routes>
