@@ -13,7 +13,7 @@ export const GruposElectrogenos = () => {
       <GlobalContainer>
         <Hero
           title={"Grupos Electrógenos"}
-          backgroundImage={"/assets/imgs/img/hero-index-dos.jpg"}
+          backgroundImage={"/assets/imgs/img/foto_portada_ge.webp"}
         />
         <SectionTextContainer>
           <p>
