@@ -17,13 +17,13 @@ export const Servicios = () => {
             <div className="btn__gap">
               <p>
                 Contamos con grupos electrógenos de todas las potencias. Tenemos
-                equipos para todas las necesidades: Hogar, comercio, industria,
-                minería y petróleo.
+                equipos para todas las necesidades:
               </p>
-              <Link to="/grupos" className="btn__service">
-                Ver más...
-              </Link>
+              <p>Hogar, comercio, industria, minería y petróleo.</p>
             </div>
+            <Link to="/grupos" className="btn__service">
+              Ver más...
+            </Link>
           </div>
         </div>
         <div className="card">
@@ -39,10 +39,11 @@ export const Servicios = () => {
                 Ofrecemos soluciones sostenibles, dando como resultado una
                 energía más limpia y eficiente.
               </p>
-              <Link to={"/energias"} className="btn__service">
-                Ver más...
-              </Link>
+              <p>Opciones para Campo, Hogar y Empresas.</p>
             </div>
+            <Link to={"/energias"} className="btn__service">
+              Ver más...
+            </Link>
           </div>
         </div>
       </ContainerContent>

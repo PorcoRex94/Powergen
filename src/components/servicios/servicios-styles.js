@@ -41,7 +41,7 @@ export const ContainerContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 35px;
+    gap: 50px;
     padding: 2rem;
 
     h3 {
@@ -57,7 +57,7 @@ export const ContainerContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 75px;
+    gap: 15px;
   }
 
   .btn__service {

@@ -1,4 +1,5 @@
 import {
+  GlobalContainer,
   GlobalSectionTextContainer,
   SectionTextBottomContainer,
   SectionTextContainer,
@@ -10,7 +11,7 @@ import { Hero } from "../components/hero/Hero";
 export const AlquilerPage = () => {
   return (
     <>
-      <main>
+      <GlobalContainer>
         <Hero
           title={"Alquiler de Grupos Electrógenos"}
           backgroundImage={"/assets/imgs/img/foto_portada_alquiler.webp"}
@@ -52,7 +53,7 @@ export const AlquilerPage = () => {
             </SectionTextBottomContainer>
           </SectionTextContainer>
         </GlobalSectionTextContainer>
-      </main>
+      </GlobalContainer>
     </>
   );
 };
