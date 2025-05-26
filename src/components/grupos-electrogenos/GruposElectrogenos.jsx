@@ -59,7 +59,7 @@ export const GruposElectrogenos = () => {
             </div>
             <div className="card">
               <img
-                src="/assets/imgs/img/foto_alquiler.webp"
+                src="/assets/imgs/img/foto_alquiler_chica.webp"
                 alt="foto alquiler"
                 className="img__servicios"
               />
@@ -78,7 +78,7 @@ export const GruposElectrogenos = () => {
             </div>
             <div className="card">
               <img
-                src="/assets/imgs/img/st_grupo_grande.webp"
+                src="/assets/imgs/img/foto_servt_chica.webp"
                 alt="foto alquiler"
                 className="img__servicios"
               />
