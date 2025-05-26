@@ -17,6 +17,7 @@ const images = [
     src: "/assets/imgs/img/city.jpg",
     text: "Grupos Electrógenos",
     text2: "Para Industria, Minería y Petróleo",
+    text3: "Empresa, Comercio y Hogar",
     section: "#contacto",
   },
   {
@@ -48,6 +49,7 @@ export const HeroIndex = () => {
               {currentIndex === 0 && <h1>Bienvenidos a Powergen</h1>}
               <h2>{image.text}</h2>
               {image.text2 && <p>{image.text2}</p>}
+              {image.text3 && <p className="p__text__tres">{image.text3}</p>}
               <ScrollButton to={image.section}>Ver más</ScrollButton>
             </HeroText>
           )}

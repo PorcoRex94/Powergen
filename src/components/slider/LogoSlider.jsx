@@ -14,7 +14,7 @@ const LogosTrack = styled.div`
 
 const LogoGroup = styled.div`
   display: flex;
-  gap: 50px;
+  gap: 20px;
 `;
 
 const Logo = styled.img`
@@ -54,7 +54,7 @@ export const LogoSlider = ({ logos }) => {
   }, [logos]);
 
   useEffect(() => {
-    speed.current = isHovering ? 0.2 : 1.8;
+    speed.current = isHovering ? 2.1 : 2.1;
   }, [isHovering]);
 
   return (

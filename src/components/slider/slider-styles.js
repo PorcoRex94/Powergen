@@ -55,14 +55,14 @@ export const ImgFloraContainer = styled.div`
 
 export const BackgroundContainer = styled.div`
   width: 100vw;
-  height: 40vh;
+  height: 18vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   h2 {
     color: var(--naranja);
-    font-size: 3rem;
+    font-size: 2.2rem;
     padding: 1rem;
   }
   background-color: var(--negro);

@@ -114,6 +114,10 @@ export const HeroText = styled.div`
     animation: ${dropFromDown} 1.2s ease-out;
     display: ${({ $isFirst }) => ($isFirst ? "none" : "block")};
   }
+
+  .p__text__tres {
+    font-size: 1.4rem;
+  }
 `;
 
 export const ScrollButton = styled(Link)`
