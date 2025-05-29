@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { WhatsAppButton } from "../btn-whatsapp/WhatsAppButton";
 import {
   ContactContainer,
@@ -18,27 +17,6 @@ import {
 import { PiMapPinFill } from "react-icons/pi";
 
 export const Contacto = () => {
-  const iframeRef = useRef(null);
-
-  const ubicaciones = [
-    "Carlos F. Melo 3580, Villa Martelli",
-    "Catamarca 3554, San Martín",
-    "Roca 2140, Florida",
-    "Reconquista 574, CABA",
-    "Salvador Debenedetti 3895, Olivos",
-  ];
-
-  useEffect(() => {
-    if (!iframeRef.current) return;
-
-    const baseUrl = "https://www.google.com/maps/embed?pb=";
-    const src = `https://www.google.com/maps/dir/${ubicaciones
-      .map((u) => encodeURIComponent(u))
-      .join("/")}`;
-
-    // Usamos redirección embebida indirecta, sin API Key ni pb
-    iframeRef.current.src = src.replace("/maps/", "/maps/embed/");
-  }, []);
   return (
     <GlobalContactContainer id="contacto">
       <h2>Contacto</h2>
@@ -108,15 +86,6 @@ export const Contacto = () => {
             allowFullScreen
             loading="lazy"
           />
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3284.158911554872!2d-58.457145884769436!3d-34.59802718046079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!4m12!1m3!2m2!1d-58.3816!2d-34.6037!1m6!1m2!1sReconquista%20574%2C%20CABA!2sRoca%202140%2C%20Florida!2m2!1d-58.4935!2d-34.5432!3e0"
-            width="100%"
-            height="500"
-            style={{ border: 0 }}
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
         </ContactContainerRight>
       </ContactContainer>
       <ContactContainerBottom>

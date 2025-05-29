@@ -76,11 +76,9 @@ export const ContainerContent = styled.div`
 /*------------------SERVICIOS DOS---------------------- */
 
 export const ContainerContentDos = styled.div`
-  display: flex;
   display: grid;
-  flex-direction: column;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, minmax(100px, 1fr));
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, minmax(100px, 1fr));
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -89,15 +87,24 @@ export const ContainerContentDos = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
+    max-height: 550px;
+    min-height: 450px;
     background: #f0f0f0;
     border-radius: 10px;
     text-align: center;
   }
 
-  .img__servicios {
+  .img__serv {
     width: 50%;
     height: 100%;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0 100%);
+  }
+
+  .img__serv__der {
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 90%);
   }
 
   .content__text {

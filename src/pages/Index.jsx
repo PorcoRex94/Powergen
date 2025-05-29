@@ -2,6 +2,7 @@ import { GlobalComponents } from "../components/global-components/GlobalComponen
 import { HeroIndex } from "../components/hero-index/HeroIndex";
 import { Nosotros } from "../components/nosotros/Nosotros";
 import { Servicios } from "../components/servicios/Servicios";
+import { ServiciosDos } from "../components/servicios/ServiciosDos";
 import { Slider } from "../components/slider/Slider";
 
 export const Index = () => {
@@ -10,6 +11,7 @@ export const Index = () => {
       <HeroIndex />
       <Nosotros />
       <Servicios />
+      <ServiciosDos />
       <Slider />
     </>
   );
