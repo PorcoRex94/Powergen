@@ -46,7 +46,7 @@ export const ServiciosDos = () => {
           <img
             src="/assets/imgs/img/autoelevador.webp"
             alt="foto autoelevadores"
-            className="img__serv"
+            className="img__serv autoelevadores"
           />
           <div className="content__text">
             <h3>Autoelevadores</h3>

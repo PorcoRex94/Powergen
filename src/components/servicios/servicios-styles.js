@@ -96,15 +96,19 @@ export const ContainerContentDos = styled.div`
   }
 
   .img__serv {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(0% 0%, 80% 0%, 90% 100%, 0% 100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   .img__serv__der {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 90%);
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 10% 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   .content__text {
@@ -113,6 +117,7 @@ export const ContainerContentDos = styled.div`
     align-items: center;
     gap: 20px;
     padding: 1rem;
+    width: 65%;
   }
 
   .btn__service {
