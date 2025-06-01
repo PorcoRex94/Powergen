@@ -16,24 +16,24 @@ export const ServiciosDos = () => {
             alt="foto ventas"
             className="img__serv__ge"
           />
-          <div className="content__text">
+          <div className="content__text right">
             <h3>Grupos Electrógenos</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae pariatur minima eius rem praesentium culpa sit saepe
-              esse ut veniam aliquid doloribus
+              Contamos con grupos electrógenos de todas las potencias. Tenemos
+              equipos para todas las necesidades:
             </p>
+            <p>Hogar, comercio, industria, minería y petróleo.</p>
             <Link className="btn__service">Ver más...</Link>
           </div>
         </div>
         <div className="card cardTwo">
-          <div className="content__text">
+          <div className="content__text left">
             <h3>Energías Alternativas</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae pariatur minima eius rem praesentium culpa sit saepe
-              esse ut veniam aliquid doloribus
+              Ofrecemos soluciones sostenibles, dando como resultado una energía
+              más limpia y eficiente.
             </p>
+            <p>Opciones para Campo, Hogar y Empresas.</p>
             <Link className="btn__service">Ver más...</Link>
           </div>
           <img
@@ -48,7 +48,7 @@ export const ServiciosDos = () => {
             alt="foto autoelevadores"
             className="img__serv__ae"
           />
-          <div className="content__text">
+          <div className="content__text right">
             <h3>Autoelevadores</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -59,7 +59,7 @@ export const ServiciosDos = () => {
           </div>
         </div>
         <div className="card cardTwo">
-          <div className="content__text">
+          <div className="content__text left">
             <h3>Motoimplementos</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

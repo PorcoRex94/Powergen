@@ -82,6 +82,7 @@ export const ContainerContentDos = styled.div`
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
+  gap: 20px;
 
   .card {
     display: flex;
@@ -133,6 +134,16 @@ export const ContainerContentDos = styled.div`
     gap: 20px;
     padding: 1rem;
     width: 65%;
+  }
+
+  .left {
+    position: relative;
+    left: 65px;
+  }
+
+  .right {
+    position: relative;
+    right: 65px;
   }
 
   .btn__service {
