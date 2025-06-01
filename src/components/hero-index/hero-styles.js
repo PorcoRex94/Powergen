@@ -121,11 +121,12 @@ export const HeroText = styled.div`
 `;
 
 export const ScrollButton = styled(Link)`
-  padding: 1rem;
+  padding: 1.2rem;
   background-color: var(--naranja);
   color: white;
   border-radius: 10px;
   animation: ${dropFromLeft} 1.2s ease-out;
+  font-size: 1.7rem;
 
   &:hover {
     background-color: rgb(249, 177, 52);

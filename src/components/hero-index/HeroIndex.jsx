@@ -18,13 +18,13 @@ const images = [
     text: "Grupos Electrógenos",
     text2: "Para Industria, Minería y Petróleo",
     text3: "Empresa, Comercio y Hogar",
-    section: "#contacto",
+    section: "#nosotros",
   },
   {
     src: "/assets/imgs/img/city.jpg",
     text: "GUARDIA 24HS",
     text2: "0810-444-1313",
-    section: "#guardia",
+    section: "#nosotros",
   },
 ];
 

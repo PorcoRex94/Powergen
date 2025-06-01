@@ -90,25 +90,40 @@ export const ContainerContentDos = styled.div`
     max-width: 100%;
     max-height: 550px;
     min-height: 450px;
-    background: #f0f0f0;
+    background-color: var(--negro);
     border-radius: 10px;
     text-align: center;
+    color: var(--naranja);
   }
 
-  .img__serv {
+  .img__serv__ge,
+  .img__serv__ae {
     width: 100%;
     height: 100%;
-    clip-path: polygon(0% 0%, 80% 0%, 90% 100%, 0% 100%);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
 
-  .img__serv__der {
+  .img__serv__ea,
+  .img__serv__mi {
     width: 100%;
     height: 100%;
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 10% 100%);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+
+  .img__serv__ge,
+  .img__serv__ae {
+    clip-path: polygon(0% 0%, 77% 0%, 90% 100%, 0% 100%);
+  }
+
+  .img__serv__ea,
+  .img__serv__mi {
+    clip-path: polygon(25.8% 0%, 100% 0%, 100% 100%, 10.5% 100%);
+  }
+
+  .img__serv__ae {
+    clip-path: polygon(0% 0%, 77% 0%, 92.3% 100%, 0% 100%);
   }
 
   .content__text {

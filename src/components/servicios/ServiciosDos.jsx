@@ -14,7 +14,7 @@ export const ServiciosDos = () => {
           <img
             src="/assets/imgs/img/grupo_blanco.webp"
             alt="foto ventas"
-            className="img__serv"
+            className="img__serv__ge"
           />
           <div className="content__text">
             <h3>Grupos Electrógenos</h3>
@@ -39,14 +39,14 @@ export const ServiciosDos = () => {
           <img
             src="/assets/imgs/img/energias_alternativas.webp"
             alt="foto alquiler"
-            className="img__serv__der"
+            className="img__serv__ea"
           />
         </div>
         <div className="card cardTwo">
           <img
             src="/assets/imgs/img/autoelevador.webp"
             alt="foto autoelevadores"
-            className="img__serv autoelevadores"
+            className="img__serv__ae"
           />
           <div className="content__text">
             <h3>Autoelevadores</h3>
@@ -71,7 +71,7 @@ export const ServiciosDos = () => {
           <img
             src="/assets/imgs/img/motoimplementos.webp"
             alt="foto paneles solares"
-            className="img__serv__der"
+            className="img__serv__mi"
           />
         </div>
       </ContainerContentDos>
