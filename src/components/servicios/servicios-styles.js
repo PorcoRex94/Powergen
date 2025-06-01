@@ -95,6 +95,7 @@ export const ContainerContentDos = styled.div`
     border-radius: 10px;
     text-align: center;
     color: var(--naranja);
+    border: 2px solid var(--naranja);
   }
 
   .img__serv__ge,
