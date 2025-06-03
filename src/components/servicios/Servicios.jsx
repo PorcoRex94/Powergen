@@ -8,7 +8,7 @@ export const Servicios = () => {
       <ContainerContent>
         <div className="card">
           <img
-            src="/assets/imgs/img/grupo_blanco.webp"
+            src="/assets/imgs/img/gruposelectrogenos.webp"
             alt="foto ventas"
             className="img__servicios"
           />

@@ -12,7 +12,7 @@ export const ServiciosDos = () => {
       <ContainerContentDos>
         <div className="card cardTwo">
           <img
-            src="/assets/imgs/img/grupo_blanco.webp"
+            src="/assets/imgs/img/gruposelectrogenos.webp"
             alt="foto ventas"
             className="img__serv__ge"
           />
