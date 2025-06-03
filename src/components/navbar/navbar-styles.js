@@ -222,7 +222,7 @@ export const UlContainer = styled.ul`
     position: absolute;
     top: 20px;
     right: -140px;
-    width: 262px;
+    width: 270px;
     background-color: var(--negro);
     border-radius: 15px;
     padding: 0.5rem 0;

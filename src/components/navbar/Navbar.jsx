@@ -189,6 +189,32 @@ export const Navbar = () => {
                     Técnico
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/servicio-tecnico"
+                    className="dropdown__link"
+                    onClick={() => {
+                      setActiveDropdown(null);
+                      closeMenu();
+                    }}
+                  >
+                    <LuArrowBigRightDash className="hand__icon" />{" "}
+                    Autoelevadores
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/servicio-tecnico"
+                    className="dropdown__link"
+                    onClick={() => {
+                      setActiveDropdown(null);
+                      closeMenu();
+                    }}
+                  >
+                    <LuArrowBigRightDash className="hand__icon" />{" "}
+                    Motoimplementos
+                  </Link>
+                </li>
               </ul>
             </li>
             <li>

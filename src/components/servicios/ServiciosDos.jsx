@@ -23,7 +23,9 @@ export const ServiciosDos = () => {
               equipos para todas las necesidades:
             </p>
             <p>Hogar, comercio, industria, minería y petróleo.</p>
-            <Link className="btn__service">Ver más...</Link>
+            <Link to={"/grupos"} className="btn__service">
+              Ver más...
+            </Link>
           </div>
         </div>
         <div className="card cardTwo">
@@ -34,7 +36,9 @@ export const ServiciosDos = () => {
               más limpia y eficiente.
             </p>
             <p>Opciones para Campo, Hogar y Empresas.</p>
-            <Link className="btn__service">Ver más...</Link>
+            <Link to={"/energias"} className="btn__service">
+              Ver más...
+            </Link>
           </div>
           <img
             src="/assets/imgs/img/energias_alternativas.webp"
@@ -44,7 +48,7 @@ export const ServiciosDos = () => {
         </div>
         <div className="card cardTwo">
           <img
-            src="/assets/imgs/img/autoelevador.webp"
+            src="/assets/imgs/img/foto_ae.webp"
             alt="foto autoelevadores"
             className="img__serv__ae"
           />
@@ -55,7 +59,9 @@ export const ServiciosDos = () => {
               Repudiandae pariatur minima eius rem praesentium culpa sit saepe
               esse ut veniam aliquid doloribus
             </p>
-            <Link className="btn__service">Ver más...</Link>
+            <Link to={"/autoelevadores"} className="btn__service">
+              Ver más...
+            </Link>
           </div>
         </div>
         <div className="card cardTwo">
@@ -66,10 +72,12 @@ export const ServiciosDos = () => {
               Repudiandae pariatur minima eius rem praesentium culpa sit saepe
               esse ut veniam aliquid doloribus
             </p>
-            <Link className="btn__service">Ver más...</Link>
+            <Link to={"/motoimplementos"} className="btn__service">
+              Ver más...
+            </Link>
           </div>
           <img
-            src="/assets/imgs/img/motoimplementos.webp"
+            src="/assets/imgs/img/foto_mi.webp"
             alt="foto paneles solares"
             className="img__serv__mi"
           />

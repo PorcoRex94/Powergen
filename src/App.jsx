@@ -10,6 +10,8 @@ import { CartDrawer } from "./components/cart-drawer/CartDrawer";
 import { Checkout } from "./components/checkout/Checkout";
 import { AlquilerPage } from "./pages/AlquilerPage";
 import { ServTecPage } from "./pages/ServTecPage";
+import { AutoelevadoresPage } from "./pages/AutoelevadoresPage";
+import { MotoimplementosPage } from "./pages/MotoimplementosPage";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/ventas" element={<VentasPage />} />
           <Route path="/alquiler" element={<AlquilerPage />} />
           <Route path="/servicio-tecnico" element={<ServTecPage />} />
+          <Route path="/autoelevadores" element={<AutoelevadoresPage />} />
+          <Route path="/motoimplementos" element={<MotoimplementosPage />} />
           <Route path="/equipos/:slug/:id" element={<DetallesGrupos />} />
         </Route>
       </Routes>

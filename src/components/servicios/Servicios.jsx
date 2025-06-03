@@ -48,7 +48,7 @@ export const Servicios = () => {
         </div>
         <div className="card">
           <img
-            src="/assets/imgs/img/autoelevador.webp"
+            src="/assets/imgs/img/foto_ae.webp"
             alt="foto ventas"
             className="img__servicios"
           />
@@ -61,14 +61,14 @@ export const Servicios = () => {
               </p>
               <p>Hogar, comercio, industria, minería y petróleo.</p>
             </div>
-            <Link to="/grupos" className="btn__service">
+            <Link to="/autoelevadores" className="btn__service">
               Ver más...
             </Link>
           </div>
         </div>
         <div className="card">
           <img
-            src="/assets/imgs/img/motoimplementos.webp"
+            src="/assets/imgs/img/foto_mi.webp"
             alt="foto alquiler"
             className="img__servicios"
           />
@@ -81,7 +81,7 @@ export const Servicios = () => {
               </p>
               <p>Opciones para Campo, Hogar y Empresas.</p>
             </div>
-            <Link to={"/energias"} className="btn__service">
+            <Link to={"/motoimplementos"} className="btn__service">
               Ver más...
             </Link>
           </div>
